@@ -1,4 +1,4 @@
-# Practice-codes
+# Practice Codes
 Full of my practice codes.
 
 ## Code Authors
