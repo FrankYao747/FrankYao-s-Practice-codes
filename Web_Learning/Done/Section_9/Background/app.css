@@ -1,0 +1,17 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-color: purple; */
+    margin: 0 auto;
+    /* background-image: url(https://static.vecteezy.com/system/resources/previews/026/843/137/large_2x/beautiful-flowers-with-beautiful-scenery-ai-image-generate-free-photo.jpg);
+    background-size: cover;
+    background-position: top; */
+    background: center/cover no-repeat blue url("https://static.vecteezy.com/system/resources/previews/026/843/137/large_2x/beautiful-flowers-with-beautiful-scenery-ai-image-generate-free-photo.jpg");
+}
+
+h1 {
+    height: 100px;
+    color: white;
+    /* background-image: url(https://images.unsplash.com/photo-1592743263126-bb241ee76ac7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwc2NlbmVyeXxlbnwwfHwwfHx8MA%3D%3D); */
+
+}
