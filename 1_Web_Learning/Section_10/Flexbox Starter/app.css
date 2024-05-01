@@ -16,10 +16,14 @@ h1 {
     /* flex-direction: row; # It's default */
     /* flex-direction: row-reverse; */
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: flex-end;
 }
 
 #container div {
     width: 200px;
     height: 200px;
+    text-align: center;
+    /* font-size: 4em; */
 }
