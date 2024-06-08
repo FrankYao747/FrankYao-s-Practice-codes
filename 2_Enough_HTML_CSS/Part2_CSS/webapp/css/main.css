@@ -141,6 +141,10 @@ a img {
 
 
 /* GLOBAL STYLES */
+body {
+    font-family: helvetica, arial, sans;
+}
+
 html,
 body {
     margin: 0;
@@ -220,6 +224,11 @@ a {
 
 .bio-box img {
     width: 100%;
+}
+
+.bio-box .social-link {
+    display: block;
+    margin: 2em 0 1em;
 }
 
 .bio-copy {
