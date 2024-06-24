@@ -16,9 +16,12 @@
         .container {
             background-color: #ccc;
             padding: 10px;
+            /* height: 1500px; */
 
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
         }
 
@@ -28,6 +31,23 @@
             margin: 30px;
             color: #fff;
             font-size: 40px;
+
+            /* flex: 1; */
+        }
+
+        .i2 {
+            height: 200px;
+            flex: 0 1 300px;
+        }
+
+        .i3 {
+            order: 1;
+            flex: 1;
+        }
+
+        .i4 {
+            align-self: flex-end;
+            order: -1;
         }
     </style>
 </head>
@@ -36,9 +56,9 @@
     <div class="test_div">
         <div class="container">
             <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
+            <div class="item i2">2</div>
+            <div class="item i3">3</div>
+            <div class="item i4">4</div>
             <div class="item">5</div>
         </div>
     </div>
