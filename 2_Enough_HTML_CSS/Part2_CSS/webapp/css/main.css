@@ -530,3 +530,16 @@ h2~p {
 .gallery-info h3 {
     margin-bottom: 1em;
 }
+
+.col-two {
+    display: flex;
+}
+
+.col-two .col-aside {
+    flex: 0 0 20em;
+    order: 1;
+}
+
+.col-two .col-content {
+    flex: 1;
+}

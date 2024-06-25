@@ -1,29 +1,32 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-06-06 22:26:26 +1000
-categories: jekyll update
+title: This is the title of the post
+postHero: /images/shark.jpg
+author: Me, Myself, and I
+authorTwitter: https://twitter.com/mhartl
+gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
+postFooter: Additional information, and maybe a <a href="#">link or two</a>
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+Call me *Ishmael*. Some years ago–*never mind how long
+precisely*–having little or no money in my purse, and nothing
+particular to interest me on shore, I thought I would sail about a little
+and see the watery part of the world. It is a way I have of driving off
+the spleen and regulating the circulation.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+<img class="pull-left" src="https://placekitten.com/g/400/200"
+     alt="kitten">
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Whenever I find myself growing grim about the mouth; whenever it is a damp,
+drizzly November in my soul; whenever I find myself involuntarily pausing
+before coffin warehouses, and bringing up the rear of every funeral I meet;
+and especially whenever my hypos get such an upper hand of me, that it
+requires a strong moral principle to prevent me from deliberately stepping
+into the street, and methodically knocking people’s hats off—then, I
+account it high time to get to sea as soon as I can. This is my substitute
+for pistol and ball.
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+With a philosophical flourish Cato throws himself upon
+his sword; I quietly take to the ship. There is nothing surprising in this.
+If they but knew it, almost all men in their degree, some time or other,
+cherish very nearly the same feelings towards the ocean with me.
