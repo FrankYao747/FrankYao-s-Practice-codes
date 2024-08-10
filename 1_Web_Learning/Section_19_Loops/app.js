@@ -57,13 +57,149 @@
 //     num++;
 // }
 
-const SECRET = "BabyHippo";
+// const SECRET = "BabyHippo";
 
-let guess = null; //prompt("enter the secret code...");
-while (guess !== SECRET) {
-    guess = prompt("enter the secret code...");
+// let guess = null; //prompt("enter the secret code...");
+// while (guess !== SECRET) {
+//     guess = prompt("enter the secret code...");
+// }
+// console.log("Congrats! ");
+
+
+// let input = prompt("Hey, say something!")
+
+// while (true) {
+//     input = prompt(input);
+//     if (input.toLowerCase() === "stop copying me!") {
+//         break;
+//     }
+
+// }
+// console.log("OK, you win!")
+
+
+// for (let i = 0; i < 1000; i++) {
+//     console.log(i);
+//     if (i === 100) break;
+// }
+
+// const number = Number(prompt("Please enter a number"));
+// if (number) {
+//     console.log("Great, number has been stored!");
+//     while (number) {
+//         guess = Number(prompt("Please guess the number:"))
+//         if (guess > number) {
+//             console.log("So large!")
+//         }
+//         else if (guess < number) {
+//             console.log("Too small!")
+//         }
+//         else if (guess == number) {
+//             console.log(`Bingo! The number is ${number}!!!`)
+//             break;
+//         }
+//         else {
+//             console.log("Error!")
+//             break;
+//         }
+//     }
+// }
+// console.log("Done!")
+
+////////////////////////////////////////////////////////////////   My Answer: //////////
+
+
+// let maximum = parseInt(prompt("Enter the maximum number!"));
+// while (!maximum) {
+//     maximum = parseInt(prompt("Enter a valid number!"));
+// }
+// const targetNumber = Math.floor(Math.random() * maximum) + 1;
+// let times = 5;
+// while (targetNumber) {
+//     if (times == 0) {
+//         console.log("you have guessed 5 times!");
+//         break;
+//     }
+//     guess = parseInt(prompt("Please guess the number:"))
+//     if (guess > targetNumber) {
+//         console.log("So large!")
+//     }
+//     else if (guess < targetNumber) {
+//         console.log("Too small!")
+//     }
+//     else if (guess == targetNumber) {
+//         console.log(`Bingo! The number is ${targetNumber}!!!`)
+//         break;
+//     }
+//     else {
+//         console.log("Error!")
+//         break;
+//     }
+//     times -= 1
+// }
+// console.log("Finish!")
+
+
+///////////////////////////
+//////  Teacher's Answer: ///////////
+///////////////////////////
+
+// let maximum = prompt("Enter the maximum number!");
+// while (!maximum) {
+//     if (maximum === 'q') break;
+//     maximum = prompt("Enter a valid number!");
+// }
+
+// if (maximum !== 'q') {
+//     const targetNum = Math.floor(Math.random() * parseInt(maximum)) + 1;
+
+//     let guess = prompt("Enter your first guess! (Type 'q' to quit)");
+//     let attempts = 1;
+
+//     while (parseInt(guess) !== targetNum) {
+//         if (guess === 'q') break;
+//         guess = parseInt(guess);
+
+//         if (guess > targetNum) {
+//             guess = prompt("Too high! Enter a new guess:")
+//             attempts++;
+//         } else if (guess < targetNum) {
+//             guess = prompt("Too low! Enter a new guess:")
+//             attempts++;
+//         } else {
+//             guess = prompt("Invalid guess. Please enter a number or 'q' to quit.")
+//         }
+
+//         if (attempts == 5) {
+//             console.log("You have guessed 5 times!")
+//             break;
+//         }
+//     }
+//     if (guess === 'q') {
+//         console.log("OK, you quit!")
+//     } else {
+//         console.log("Congrats You Win!!!")
+//         console.log(`You got it!!! It took you ${attempts} guesses.`)
+//     }
+// }
+// else {
+//     console.log("OK, you quit!")
+// }
+
+const subreddits = ['cringe', 'books', 'chickens', 'funny', 'pic']
+
+for (let sub of subreddits) {
+    console.log(`Visit reddit.com/r/${sub}`);
 }
-console.log("Congrats! ");
+
+for (let n of "hello world") {
+    console.log(n)
+}
+
+
+
+
+
 
 
 
