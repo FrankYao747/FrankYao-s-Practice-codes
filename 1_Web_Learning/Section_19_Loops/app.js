@@ -186,24 +186,88 @@
 //     console.log("OK, you quit!")
 // }
 
-const subreddits = ['cringe', 'books', 'chickens', 'funny', 'pic']
+// const subreddits = ['cringe', 'books', 'chickens', 'funny', 'pic']
 
-for (let sub of subreddits) {
-    console.log(`Visit reddit.com/r/${sub}`);
+// for (let sub of subreddits) {
+//     console.log(`Visit reddit.com/r/${sub}`);
+// }
+
+// for (let n of "hello world") {
+//     console.log(n)
+// }
+
+
+// const testScores = {
+//     keenan: 80,
+//     damon: 67,
+//     kim: 89,
+//     shawn: 91,
+//     marlon: 72
+// }
+
+
+// for (let person in testScores) {
+//     // console.log(person)
+//     console.log(`${person.toUpperCase()}'s score is ${testScores[person]}`)
+// }
+
+// // for (let n = 0; n < testScores.length; n++) {
+// //     console.log(testScores[n])
+// // }
+
+// console.log(Object.keys(testScores))
+
+// console.log(Object.values(testScores))
+
+
+
+/////////////////////////////////////////
+///////////  My Todo List App /////////////
+//////////////////////////////////////////
+list = [];
+let flag = true;
+while (flag) {
+
+    input = prompt("What would you like to do?").toLowerCase();
+    if (input == 'new') {
+        let newInput = prompt("Please enter new todo:");
+        list.splice(list.length, 0, newInput);
+
+    } else if (input == 'list') {
+        if (list.length != 0) {
+            let n = 1;
+            console.log("*************");
+            for (item of list) {
+                console.log(`${n}: ${item}`);
+                n += 1;
+            }
+            console.log("*************");
+        } else {
+            console.log("*************");
+            console.log("Empty List!!!");
+            console.log("*************");
+        }
+
+    } else if (input == 'delete') {
+
+        chooseNum = prompt("Please enter the item number:")
+
+        if (parseInt(chooseNum) <= (list.length) && parseInt(chooseNum) > 0) {
+            let temItem = list[chooseNum - 1]
+            list.splice(chooseNum - 1, 1);
+            console.log(`${temItem} has been deleted!`)
+            break;
+        } else {
+            console.log("Please enter a valid number")
+        }
+
+
+    } else if (input == 'quit' || input == 'q') {
+        console.log("OK, You Quit!");
+        flag = false;
+        break;
+    } else {
+        console.log("Enter Error!");
+    }
 }
-
-for (let n of "hello world") {
-    console.log(n)
-}
-
-
-
-
-
-
-
-
-
-
-
 
