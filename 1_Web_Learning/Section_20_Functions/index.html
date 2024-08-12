@@ -11,7 +11,7 @@
 
     <h1>Functions</h1>
 
-    <div>
+    <div style="margin: 0 0 0 40px;">
         <h2>Reusable procedures</h2>
         <li>Functions allow us to write reusable, modular code. </li>
         <li>We define a "chunk" of code that we can then execute at a later point.</li>
@@ -19,8 +19,37 @@
     </div>
 
 
+    <h1>Function Expressions</h1>
 
+    <div style="margin: 0 0 0 40px;">
+        <li>
+            <div>
+                function add(x, y) {<br>
+                return x + y;<br>
+                }
+            </div>
+        </li>
+        <li>
+            <div>
+                const add = function (x, y){<br>
+                return x + y;<br>
+                }
+            </div>
+        </li>
+    </div>
 
+    <h1>Try/Catch</h1>
+    <div style="margin: 0 0 0 40px;">
+        function yell(msg) {<br>
+        try {<br>
+        console.log(msg.toUpperCase().repeat(3)) <br>
+        } catch (e) { <br>
+        console.log(e);<br>
+        console.log("Please pass a string next time!") <br>
+        } <br>
+        } <br>
+
+    </div>
 
 
 
