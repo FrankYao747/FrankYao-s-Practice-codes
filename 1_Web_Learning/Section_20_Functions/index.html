@@ -13,29 +13,33 @@
 
     <div style="margin: 0 0 0 40px;">
         <h2>Reusable procedures</h2>
-        <li>Functions allow us to write reusable, modular code. </li>
-        <li>We define a "chunk" of code that we can then execute at a later point.</li>
-        <li>We use them <b>ALL THE TIME</b></li>
+        <ul>
+            <li>Functions allow us to write reusable, modular code. </li>
+            <li>We define a "chunk" of code that we can then execute at a later point.</li>
+            <li>We use them <b>ALL THE TIME</b></li>
+        </ul>
     </div>
 
 
     <h1>Function Expressions</h1>
 
     <div style="margin: 0 0 0 40px;">
-        <li>
-            <div>
-                function add(x, y) {<br>
-                return x + y;<br>
-                }
-            </div>
-        </li>
-        <li>
-            <div>
-                const add = function (x, y){<br>
-                return x + y;<br>
-                }
-            </div>
-        </li>
+        <ul>
+            <li>
+                <div>
+                    function add(x, y) {<br>
+                    return x + y;<br>
+                    }
+                </div>
+            </li>
+            <li>
+                <div>
+                    const add = function (x, y){<br>
+                    return x + y;<br>
+                    }
+                </div>
+            </li>
+        </ul>
     </div>
 
     <h1>Try/Catch</h1>
@@ -52,6 +56,53 @@
     </div>
 
 
+
+    <h1>Callbacks & Array Methods</h1>
+    <div style="margin: 0 0 0 40px;">
+        <ul>
+            <li>Use the new arrow function syntax</li>
+            <li> Understand and use these methods:
+            <li>forEach</li>
+            <!-- <div> -->
+            <ul>
+                <li>map</li>
+                <p>
+                    Creates a new array with the results of calling a callback on every element in the array.
+                </p>
+
+                <li>filter</li>
+                <li>find</li>
+                <li>reduce</li>
+                <li>some</li>
+                <li>every</li>
+            </ul>
+            <!-- </div> -->
+            </li>
+        </ul>
+
+        <div>
+
+            <b>
+                <p>How a map and forEach functions would look like:</p>
+            </b>
+            <p>(Provided this just to understand how foreach and map function definitions would look like)</p>
+            <p><strong>ForEach:</strong></p>
+            <div class="ud-component--base-components--code-block">
+                <div>
+                    <pre class="prettyprint linenums prettyprinted" role="presentation"
+                        style=""><ol class="linenums"><li class="L0"><span class="typ">Array</span><span class="pun">.</span><span class="pln">prototype</span><span class="pun">.</span><span class="pln">forEach1</span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">callback</span><span class="pun">){</span></li><li class="L1"><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">let</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    callback</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">[</span><span class="pln">i</span><span class="pun">],</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">);</span></li><li class="L3"><span class="pln">  </span><span class="pun">}</span></li><li class="L4"><span class="pun">}</span></li></ol></pre>
+                </div>
+            </div>
+            <p><strong>Map:</strong></p>
+            <div class="ud-component--base-components--code-block">
+                <div>
+                    <pre class="prettyprint linenums prettyprinted" role="presentation"
+                        style=""><ol class="linenums"><li class="L0"><span class="typ">Array</span><span class="pun">.</span><span class="pln">prototype</span><span class="pun">.</span><span class="pln">map1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">callback</span><span class="pun">){</span></li><li class="L1"><span class="kwd">const</span><span class="pln"> newarray </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[];</span></li><li class="L2"><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">let</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">    newarray</span><span class="pun">.</span><span class="pln">push</span><span class="pun">(</span><span class="pln">callback</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">[</span><span class="pln">i</span><span class="pun">],</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">));</span></li><li class="L4"><span class="pln">  </span><span class="pun">}</span></li><li class="L5"><span class="pln">  </span><span class="kwd">return</span><span class="pln"> newarray</span><span class="pun">;</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 

@@ -81,9 +81,9 @@ if (radius > 0) {
     var abc = 3.14159;
     var msg = 'HIIII'
 }
-console.log(radius);
-console.log(abc)
-console.log(msg)
+// console.log(radius);
+// console.log(abc)
+// console.log(msg)
 
 
 
@@ -123,8 +123,8 @@ function makeBetweenFunc(min, max) {
     }
 }
 
-const isAdult = makeBetweenFunc(19, 64)
-const isSenior = makeBetweenFunc(65, 120)
+// const isAdult = makeBetweenFunc(19, 64)
+// const isSenior = makeBetweenFunc(65, 120)
 
 
 /////////////////////////////////////////
@@ -167,13 +167,13 @@ const hen = {
 
 //////////////////////////////
 
-try {
-    hello.toUpperCase();
-} catch {
-    console.log("ERROR!!!")
-}
+// try {
+//     hello.toUpperCase();
+// } catch {
+//     console.log("ERROR!!!")
+// }
 
-console.log("After!")
+// console.log("After!")
 
 
 function yell(msg) {
@@ -209,10 +209,109 @@ function yell(msg) {
 
 
 
+////////////////////////////////////////////////////////
+
+///////////////
+// forEach
+///////////////
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+// function print(el) {
+//     console.log(el)
+// }
+// // print(numbers[0])
+// numbers.forEach(print)
+
+
+// numbers.forEach(function (el) {
+//     console.log(el)
+// })
+
+// for (let el of numbers) {
+//     console.log(el);
+// }
+
+
+// numbers.forEach(function (el) {
+//     if (el % 2 === 0) {
+//         console.log(el)
+//     }
+// })
+
+
+const movies = [
+    {
+        title: 'Amadeus',
+        score: 99,
+    },
+    {
+        title: 'Stand By Me',
+        score: 85,
+    },
+    {
+        title: 'Parasite',
+        score: 95,
+    },
+    {
+        title: 'Alien',
+        score: 90,
+    },
+]
+
+// movies.forEach(function (mo) {
+//     console.log(`${mo.title} - ${mo.score}/100`);
+// })
+
+//////////////////
+//  map 
+//////////////////
+
+const texts = ['rofl', 'lol', 'omg', 'ttyl'];
+
+const caps = texts.map(function (t) {
+    return t.toUpperCase();
+})
+
+// texts;
+// caps;
+
+const dd = numbers.map(function (m) {
+    return m * 2;
+})
+
+titles = movies.map(function (mo) {
+    return mo.title.toUpperCase();
+})
 
 
 
 
+numbers.forEach(function (m) {
+    console.log(m * 2);
+})
+
+
+// // DO NOT ALTER THE FOLLOWING CODE:
+// const fullNames = [{ first: 'Albus', last: 'Dumbledore' }, { first: 'Harry', last: 'Potter' }, { first: 'Hermione', last: 'Granger' }, { first: 'Ron', last: 'Weasley' }, { first: 'Rubeus', last: 'Hagrid' }, { first: 'Minerva', last: 'McGonagall' }, { first: 'Severus', last: 'Snape' }];
+
+// // Write your code here
+// const firstNames = fullNames.map(function (name) {
+//     return name.first
+// })
+
+////////////////////////////////////////////////
+
+
+
+// const add = function(x,y) {
+//     return x+y
+// }
+
+// const add = (x,y) => {
+//     return x+y
+// }
 
 
 
