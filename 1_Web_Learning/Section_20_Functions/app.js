@@ -288,9 +288,9 @@ titles = movies.map(function (mo) {
 
 
 
-numbers.forEach(function (m) {
-    console.log(m * 2);
-})
+// numbers.forEach(function (m) {
+//     console.log(m * 2);
+// })
 
 
 // // DO NOT ALTER THE FOLLOWING CODE:
@@ -312,6 +312,24 @@ numbers.forEach(function (m) {
 // const add = (x,y) => {
 //     return x+y
 // }
+
+const rollDie_6 = () => {
+    return Math.floor(Math.random() * 6) + 1;
+}
+
+const greet_n = (name) => {
+    return (`Hey ${name}!`);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
