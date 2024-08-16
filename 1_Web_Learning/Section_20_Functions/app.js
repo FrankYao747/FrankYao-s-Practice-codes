@@ -245,18 +245,47 @@ const movies = [
     {
         title: 'Amadeus',
         score: 99,
+        year: 1984
+    },
+    {
+        title: 'Sharknado',
+        score: 35,
+        year: 2013
+    },
+    {
+        title: '13 Going On 30',
+        score: 70,
+        year: 2004
     },
     {
         title: 'Stand By Me',
         score: 85,
+        year: 1986
+    },
+    {
+        title: 'Waterworld',
+        score: 62,
+        year: 1995
+    },
+    {
+        title: 'Jingle All The Way',
+        score: 71,
+        year: 1996
     },
     {
         title: 'Parasite',
         score: 95,
+        year: 2019
+    },
+    {
+        title: 'Notting Hill',
+        score: 77,
+        year: 1999
     },
     {
         title: 'Alien',
         score: 90,
+        year: 1979
     },
 ]
 
@@ -286,6 +315,11 @@ titles = movies.map(function (mo) {
 })
 
 
+const newMovies = movies.map(function (movie) {
+    return `${movie.title} - ${movie.score / 10}`
+})
+
+const newMovies_2 = movies.map(movie => (`${movie.title} - ${movie.score / 10}`));
 
 
 // numbers.forEach(function (m) {
@@ -313,13 +347,66 @@ titles = movies.map(function (mo) {
 //     return x+y
 // }
 
+
+//  No return:
 const rollDie_6 = () => {
-    return Math.floor(Math.random() * 6) + 1;
+    Math.floor(Math.random() * 6) + 1;
 }
+
+// includes return:
+const rollDie_6_v2 = () => (
+    Math.floor(Math.random() * 6) + 1
+);
+
 
 const greet_n = (name) => {
     return (`Hey ${name}!`);
 }
+
+const add = (a, b) => a + b;
+
+
+
+// ////////////////////////////
+
+// console.log("waiting... 3S")
+// setTimeout(() => {
+//     console.log("Hello!!!!")
+// }, 3000)
+
+
+
+
+// const id = setInterval(() => {
+//     console.log(Math.random())
+// }, 2000);
+
+
+// clearInterval(id)
+
+////////////////////////////////////////
+///////// filter ///////////////////////
+////////////////////////////////////////
+
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+const odds = nums.filter(n => (n % 2 === 1
+));
+const smallNums = nums.filter(n => n < 5);
+
+const goodMovies = movies.filter(m => (m.score > 80));
+
+const goodTitle = movies.filter(m => (m.score > 80)).map(m => m.title);
+
+const recentMovies = movies.filter(m => (m.year > 2000));
+
+
+// Test:
+
+// function validUserNames(usernames) {
+//   return usernames.filter(n=> n.length<10);
+// } 
+const validUserNames = usernames => usernames.filter(n => n.length < 10);
+
 
 
 

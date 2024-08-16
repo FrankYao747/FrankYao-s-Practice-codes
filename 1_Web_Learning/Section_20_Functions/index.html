@@ -71,6 +71,9 @@
                 </p>
 
                 <li>filter</li>
+                <p>
+                    Creates a new array with all elements that pass the test implemented by the provided function.
+                </p>
                 <li>find</li>
                 <li>reduce</li>
                 <li>some</li>
@@ -106,10 +109,31 @@
 
     <h1>Arrow Functions</h1>
     <div style="margin: 0 0 0 40px;">
-        "syntactically compact alternative" to a regular function expression
+        <p>
+            "syntactically compact alternative" to a regular function expression</p>
+        <p>
+            e.g., <br>
+            const newMovies_2 = movies.map(movie => (`${movie.title} - ${movie.score / 10}`));
+        </p>
     </div>
 
 
+    <h1>setTimeout and setInterval</h1>
+    <div style="margin: 0 0 0 40px;">
+        <p>
+            setTimeout(() => {<br>
+            console.log("Hello!!!!") <br>
+            }, 3000)
+        </p>
+
+        <p>
+            const id = setInterval(() => { <br>
+            console.log(Math.random()) <br>
+            }, 2000);<br>
+            <br>
+            <b>clearInterval(id)</b>
+        </p>
+    </div>
 
     <script src="app.js"></script>
 </body>
