@@ -143,7 +143,9 @@ const myMath = {
 // myMath.square(4)
 
 
-
+////////////////////////////////////////
+///////// this ///////////////////////
+////////////////////////////////////////
 
 
 const cat = {
@@ -164,6 +166,30 @@ const hen = {
         return "EGG"
     }
 }
+
+
+
+//  Pay attention to "this" between normal function and arrow function
+const person = {
+    firstName: 'Viggo',
+    lastName: 'Mortensen',
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`
+    },
+    shoutName: function () {
+        setTimeout(() => {
+            console.log(this);
+            console.log(this.fullName())
+        }, 3000)
+    }
+}
+
+
+
+
+
+
+
 
 //////////////////////////////
 
@@ -409,10 +435,69 @@ const validUserNames = usernames => usernames.filter(n => n.length < 10);
 
 
 
+////////////////////////////////////////
+///////// every ///////////////////////
+////////////////////////////////////////
+
+
+const exams = [80, 98, 92, 78, 90, 89, 84, 81, 77]
+
+exams.every(score => score >= 75)
+
+
+////////////////////////////////////////
+///////// some ///////////////////////
+////////////////////////////////////////
+
+exams.some(score => score >= 75)
+
+
+movies.some(movie => movie.year > 2015)
+
+const allEvens = numbers => numbers.every(num => (num % 2 === 0));
+
+
+////////////////////////////////////////
+///////// reduce ///////////////////////
+////////////////////////////////////////
+
+
+const red_list = [3, 5, 7, 9, 11]
+
+const red = red_list => red_list.reduce((accumulator, currentValue) => (accumulator + currentValue));
+
+
+const prices = [9.99, 1.50, 19.99, 49.99, 30.50];
+
+let total = 0;
+for (let price of prices) {
+    total += price
+}
+console.log(`The sum of ${prices} is: ${total}`)
+
+
+const cul = prices.reduce((total, price) => (total + price));
+
+const minPrice = prices.reduce((min, price) => {
+    if (price < min) {
+        return price;
+    } return min;
+});
+
+
+const bestMovie = movies.reduce((movie_a, movie_b) => {
+    if (movie_a.score > movie_b.score) {
+        return movie_a.title;
+    } return movie_b.title;
+});
+
+
+const evens = [2, 4, 6, 8];
+evens.reduce((sum, num) => sum + num, 100)
 
 
 
-
+// ///////////////////////////////////
 
 
 
