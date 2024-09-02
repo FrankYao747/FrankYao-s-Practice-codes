@@ -40,6 +40,17 @@ tasButton.addEventListener('click', shout, { once: true });
 tasButton.addEventListener('click', twist);
 
 
+/////////////////////
+
+const hel = () => {
+    console.log('hello');
+}
+
+const god = () => {
+    console.log('goodbye');
+}
 
 
+document.querySelector('#hello').addEventListener('click', hel);
+document.querySelector('#goodbye').addEventListener('click', god);
 
