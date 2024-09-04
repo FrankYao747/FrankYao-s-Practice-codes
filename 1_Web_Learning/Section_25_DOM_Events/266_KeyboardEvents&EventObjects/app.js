@@ -18,25 +18,25 @@ const input = document.querySelector('input');
 // })
 
 window.addEventListener('keydown', function (evt) {
-    console.log(evt.key);
-    console.log(evt.code);
+    // console.log(evt.key);
+    // console.log(evt.code);
     // console.log(evt);
-    // switch (evt.code) {
-    //     case 'ArrowUp':
-    //         console.log("Up!");
-    //         break;
-    //     case 'ArrowDown':
-    //         console.log("Down!");
-    //         break;
-    //     case 'ArrowRight':
-    //         console.log("Right!");
-    //         break;
-    //     case 'ArrowLeft':
-    //         console.log("Left!");
-    //         break;
-    //     default:
-    //         console.log("Ignored!")
-    // }
+    switch (evt.code) {
+        case 'ArrowUp':
+            console.log("Up!");
+            break;
+        case 'ArrowDown':
+            console.log("Down!");
+            break;
+        case 'ArrowRight':
+            console.log("Right!");
+            break;
+        case 'ArrowLeft':
+            console.log("Left!");
+            break;
+        default:
+            console.log("Ignored!")
+    }
 })
 
 
