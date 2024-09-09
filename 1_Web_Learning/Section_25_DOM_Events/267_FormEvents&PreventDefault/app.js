@@ -65,4 +65,40 @@ qtyforms.addEventListener("submit", function (e) {
 
 });
 
+/////////////////////////////////////////////////////////////////
+
+
+const inputEvent = document.querySelector('#inputEvent');
+
+const h1E = document.querySelector('#h2E');
+
+
+
+inputEvent.addEventListener('input', function (e) {
+    // console.log("Inputed!");
+
+    if (inputEvent.value == "") {
+        h1E.innerText = "Enter Your Username";
+    } else h1E.innerText = `Welcome, ${inputEvent.value}`;
+})
+
+
+
+
+const bubbling = document.querySelector('#bub');
+
+bubbling.addEventListener('click', function (e) {
+    console.log('clicked!');
+    e.stopPropagation();
+})
+
+
+
+
+
+
+
+
+
+
 
