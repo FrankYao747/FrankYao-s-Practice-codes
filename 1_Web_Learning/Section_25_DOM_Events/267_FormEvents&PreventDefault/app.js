@@ -21,6 +21,21 @@ const tweetForm = document.querySelector("#tweetForm");
 
 const tweetsContainer = document.querySelector("#tweets");
 
+// const lis = document.querySelectorAll('li');
+// for (let li of lis) {
+//     li.addEventListener('click', function () {
+//         li.remove();
+//     })
+// }
+
+tweetsContainer.addEventListener('click', function (e) {
+    // this.remove();
+    // console.log("Click On UL!");
+    // console.log(e); 
+
+
+    e.target.nodeName === 'LI' && e.target.remove(); // if  nodeName === 'LI'
+});
 
 
 tweetForm.addEventListener("submit", function (e) {
