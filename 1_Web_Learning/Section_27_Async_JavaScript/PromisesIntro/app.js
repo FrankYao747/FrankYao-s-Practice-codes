@@ -136,29 +136,31 @@ const fakeRequestPromise = (url) => {
 //     })
 
 
-fakeRequestPromise('yelp.com/api/coffee/page1')
-    .then((data) => {
-        console.log("IT worked (page1)!!!!!!!!!!!!!!")
-        console.log(data)
-        return fakeRequestPromise('yelp.com/api/coffee/page2')
-    })
-    .then((data) => {
-        console.log("IT worked (page2)!!!!!!!!!!!!!!")
-        console.log(data)
-        return fakeRequestPromise('yelp.com/api/coffee/page3')
-    })
-    .then((data) => {
-        console.log("IT worked (page3)!!!!!!!!!!!!!!")
-        console.log(data)
-    })
-    .catch((err) => {
-        console.log("OH NO, A request Failed!!!")
-        console.log(err)
-    })
+// fakeRequestPromise('yelp.com/api/coffee/page1')
+//     .then((data) => {
+//         console.log("IT worked (page1)!!!!!!!!!!!!!!")
+//         console.log(data)
+//         return fakeRequestPromise('yelp.com/api/coffee/page2')
+//     })
+//     .then((data) => {
+//         console.log("IT worked (page2)!!!!!!!!!!!!!!")
+//         console.log(data)
+//         return fakeRequestPromise('yelp.com/api/coffee/page3')
+//     })
+//     .then((data) => {
+//         console.log("IT worked (page3)!!!!!!!!!!!!!!")
+//         console.log(data)
+//     })
+//     .catch((err) => {
+//         console.log("OH NO, A request Failed!!!")
+//         console.log(err)
+//     })
 
+//////////////////////////////////////////////////
 
+new Promise((resolve, reject) => {
 
-
+})
 
 
 
