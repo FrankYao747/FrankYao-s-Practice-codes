@@ -5,12 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
 </head>
 
 <body>
+    <div>
+        <h1>
+            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/23344424#questions/19786468">why
+                can't we add the RGB function to each instance? (Why use "new" and add function in object.prototype?
+                )</a>
+        </h1>
+    </div>
+    <div>
+        <div class="question-details--question--B5edy">
+            <!-- <div class="question-details--avatar-container--SQKX2"><img
+                    src="https://img-b.udemycdn.com/user/50x50/194246628_3069_3.jpg" alt=""
+                    class="ud-avatar ud-avatar-image" width="48" height="48" loading="lazy"
+                    style="width: 4.8rem; height: 4.8rem;"></div> -->
 
+            <div class="ud-text-xs ud-text-with-links question-metadata--metadata--IkRE4"><a
+                    href="/user/gurditt-singh-khurana/" target="_blank" rel="noopener noreferrer"
+                    data-purpose="user-tag">Gurditt</a> · <div tabindex="0" data-purpose="item-link"
+                    class="item-link item-link--common--j8WLy item-link--default-theme--hHAh2" role="link">Lecture
+                    306</div> · 1 year ago</div>
+            <div class="question-details--body--0qpWs">
+                <div data-purpose="body" class="ud-text-sm rt-scaffolding">
+                    <p>I don't we understand, why can't we add the RGB function to each instance?</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div>
+        <div>
+            <div class="answer--answer--s9uow answer--top-answer--RoZMA">
+                <div>
+                    <div aria-hidden="true" class="ud-avatar ud-heading-md" data-purpose="display-initials"
+                        style="width: 4.8rem; height: 4.8rem;">AS</div>
+                </div>
+                <div class="answer--info--pajyV">
 
+                    <div class="ud-text-xs">1 year ago</div>
+                    <div class="answer--body--zbeI7">
+                        <div data-purpose="safely-set-inner-html:rich-text-viewer:html"
+                            class="ud-text-sm rt-scaffolding">
+                            <p>In JavaScript, adding functions to the prototype of a constructor function or a class
+                                is a common practice used to provide shared functionality to all instances created
+                                from that constructor function or class.</p>
+                            <p>We can technically add the RGB function to each instance, but since that function is
+                                doing the same thing for all the instances, it is better to add it on the prototype.
+                            </p>
+                            <p>Here are a few reasons why adding functions to the prototype is beneficial:</p>
+                            <p>Memory Efficiency: When you add a function to the prototype, it is shared among all
+                                instances created from the constructor function. This means that the function is
+                                stored in memory only once, regardless of how many instances are created. This
+                                approach is more memory-efficient compared to adding the same function directly to
+                                each instance.</p>
+                            <p>Method Sharing: By adding functions to the prototype, all instances created from the
+                                constructor function or class will have access to those functions. This allows
+                                instances to share methods and reduces memory consumption since each instance does
+                                not need its copy of the function.</p>
+                            <p>Dynamic Method Updates: Adding functions to the prototype allows you to modify the
+                                behavior of all instances at once. If you add or modify a function on the prototype,
+                                all existing instances and future instances will reflect those changes. This dynamic
+                                updating of methods can be useful in scenarios where you need to update the behavior
+                                of multiple objects simultaneously.</p>
+                            <p>Code Organization and Clarity: Adding functions to the prototype helps in organizing
+                                the code and separating the object's properties from its methods. It makes the code
+                                more readable, maintainable, and easier to understand.</p>
+                            <p>Here's an example to illustrate adding a function to the prototype:</p>
+                            <div class="ud-component--base-components--code-block">
+                                <div>
+                                    <pre class="prettyprint linenums prettyprinted" role="presentation"
+                                        style=""><ol class="linenums"><li class="L0"><span class="kwd">function</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">(</span><span class="pln">name</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">name </span><span class="pun">=</span><span class="pln"> name</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="typ">Person</span><span class="pun">.</span><span class="pln">prototype</span><span class="pun">.</span><span class="pln">greet </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">  console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Hello, my name is '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">name</span><span class="pun">);</span></li><li class="L6"><span class="pun">};</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="kwd">const</span><span class="pln"> person1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">(</span><span class="str">'John'</span><span class="pun">);</span></li><li class="L9"><span class="kwd">const</span><span class="pln"> person2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">(</span><span class="str">'Jane'</span><span class="pun">);</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pln">person1</span><span class="pun">.</span><span class="pln">greet</span><span class="pun">();</span><span class="pln"> </span><span class="com">// Output: Hello, my name is John</span></li><li class="L2"><span class="pln">person2</span><span class="pun">.</span><span class="pln">greet</span><span class="pun">();</span><span class="pln"> </span><span class="com">// Output: Hello, my name is Jane</span></li></ol></pre>
+                                </div>
+                            </div>
+                            <p>In the example above, the <code><strong>greet()</strong></code> the function is added
+                                to the <code><strong>Person.prototype</strong></code>, so all instances of
+                                <code><strong>Person</strong></code> have access to it. This way, the function is
+                                shared among all instances, reducing memory consumption and providing a consistent
+                                interface for all objects created from the <code><strong>Person</strong></code>
+                                constructor function
+                            </p>
+                            <p>If you have any questions, please feel free to ask.</p>
+                            <p>Hope this helps</p>
+                            <p>Kind Regards,</p>
+                            <p>Akshay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    </div>
 
 
 
