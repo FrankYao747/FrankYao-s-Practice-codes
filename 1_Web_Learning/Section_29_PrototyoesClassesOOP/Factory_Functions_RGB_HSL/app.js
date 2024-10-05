@@ -184,6 +184,17 @@ class Color {
 		const { h, s, l } = this;
 		return `hsl(${h},${s}%,${l}%)`;
 	}
+
+	opposite() {
+		const { h, s, l } = this;
+		const newHue = (h + 180) % 360;
+		return `hsl(${newHue},${s}%,${l}%)`;
+	}
+	fullySaturated() {
+		const { h, l } = this;
+		return `hsl(${h},100%,${l}%)`;
+	}
+
 	calcHSL() {
 		let { r, g, b } = this;
 		// Make r, g, and b fractions of 1
