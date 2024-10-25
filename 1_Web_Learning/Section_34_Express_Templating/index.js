@@ -10,6 +10,17 @@ app.get('/', (req, res) => {
     // res.send("Hi")
     res.render('home')
 })
+app.get('/r/:subreddit', (req, res) => {
+    const { subreddit } = req.params;
+    // console.log(req.params);
+    res.render('subreddit', { subreddit });
+})
+
+app.get('/rand', (req, res) => {
+    const num = Math.floor(Math.random() * 10) + 1;
+    res.render('random', { bubbles: num })
+})
+
 
 app.listen(3000, () => {
     console.log("Listening on port 3000")
