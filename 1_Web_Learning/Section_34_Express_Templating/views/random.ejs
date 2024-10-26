@@ -9,7 +9,17 @@
 
 <body>
     <h1>
-        Your random number is: <%= bubbles %>
+        Your random number is: <%= num %>
+            <% if(num%2===0){ %>
+                <h2>That is an Even number!</h2>
+                <% } else { %>
+                    <h2> It is an Odd Number!</h2>
+                    <% } %>
+
+
+                        <h3> That number is:
+                            <%= num%2===0 ? 'EVEN' :'ODD' %>
+                        </h3>
     </h1>
 
 </body>
