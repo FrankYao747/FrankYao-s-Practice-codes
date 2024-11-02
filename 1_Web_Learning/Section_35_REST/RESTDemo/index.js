@@ -38,30 +38,19 @@ let init = () => {
 }
 
 let comments = init();
-console.log(comments)
-//////////////////////
-// let clone = []
-
-// // 将 user 中所有的属性拷贝到其中
-// for (let key in comments) {
-//     clone[key] = comments[key];
-// }
-///////////////////////////////
+// console.log(comments)
 
 
 app.get('/comments', (req, res) => {
     res.render('comments/index', { comments });
 })
 app.get('/comments/reset', (req, res) => {
-    let comments_reset = init();
-    comments = [];
-    // console.log("comments_2:");
-    // console.log(comments_2);
-    // res.render('comments/index', { comments: comments_reset });
-    // res.redirect('/comments', { comments: comments_reset });
-    for (let n of comments_reset) {
-        comments.push(n);
-    }
+    // let comments_reset = init();
+    comments = init();
+    // comments = [];
+    // for (let n of comments_reset) {
+    //     comments.push(n);
+    // }
     res.redirect('/comments');
 })
 
