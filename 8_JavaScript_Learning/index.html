@@ -39,6 +39,23 @@
         console.log(date);
 
 
+        //// static method
+
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        };
+
+        Person.eyes = 2;
+        Person.arms = 2;
+
+        Person.walk = function () {
+            console.log('Walking!!!');
+            console.log('Eyes: ', this.eyes)
+        }
+
+
 
 
     </script>
