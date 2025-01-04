@@ -1,0 +1,17 @@
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\bin\Debug\net8.0-windows\MyFirstWinFormsApp.exe
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\bin\Debug\net8.0-windows\MyFirstWinFormsApp.deps.json
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\bin\Debug\net8.0-windows\MyFirstWinFormsApp.runtimeconfig.json
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\bin\Debug\net8.0-windows\MyFirstWinFormsApp.dll
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\bin\Debug\net8.0-windows\MyFirstWinFormsApp.pdb
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.Form1.resources
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.csproj.GenerateResource.cache
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.AssemblyInfoInputs.cache
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.AssemblyInfo.cs
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.csproj.CoreCompileInputs.cache
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.sourcelink.json
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.dll
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\refint\MyFirstWinFormsApp.dll
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.pdb
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.genruntimeconfig.cache
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\ref\MyFirstWinFormsApp.dll

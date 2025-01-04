@@ -1,6 +1,8 @@
 ﻿
 
 
+using System;
+
 Console.WriteLine("Hello, World!");
 Console.WriteLine("++++++++++++++++++++++++++++++++++++");
 
@@ -114,4 +116,49 @@ int? ix = 0;
 ix = null;
 Console.WriteLine("int? ix is: {0}", ix);
 Console.WriteLine("++++++++++++++++++++++++++++++++++++");
+
+
+
+int i = 10;
+
+if (i > 10)
+{
+    Console.WriteLine("i > 10");
+} else
+{
+    Console.WriteLine("i <= 10");
+}
+
+////////////////////////////////////////////////
+
+string fruit = "apple";
+if (fruit == "apple") // and && ; or ||
+{
+    Console.WriteLine("It's an apple");
+}
+else
+{
+    Console.WriteLine("Not apple");
+}
+
+//////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
