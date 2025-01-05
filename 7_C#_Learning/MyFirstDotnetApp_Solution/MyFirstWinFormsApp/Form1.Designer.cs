@@ -33,6 +33,9 @@
             txtUserName = new TextBox();
             button1 = new Button();
             btnWhile = new Button();
+            btnArray = new Button();
+            buttonCase1 = new Button();
+            textBoxCase1 = new TextBox();
             SuspendLayout();
             // 
             // btnCheckName
@@ -81,11 +84,42 @@
             btnWhile.UseVisualStyleBackColor = true;
             btnWhile.Click += btnWhile_Click;
             // 
+            // btnArray
+            // 
+            btnArray.Location = new Point(306, 408);
+            btnArray.Name = "btnArray";
+            btnArray.Size = new Size(94, 29);
+            btnArray.TabIndex = 7;
+            btnArray.Text = "Array";
+            btnArray.UseVisualStyleBackColor = true;
+            btnArray.Click += btnArray_Click;
+            // 
+            // buttonCase1
+            // 
+            buttonCase1.Location = new Point(680, 117);
+            buttonCase1.Name = "buttonCase1";
+            buttonCase1.Size = new Size(94, 29);
+            buttonCase1.TabIndex = 8;
+            buttonCase1.Text = "Case1";
+            buttonCase1.UseVisualStyleBackColor = true;
+            buttonCase1.Click += buttonCase1_Click;
+            // 
+            // textBoxCase1
+            // 
+            textBoxCase1.Location = new Point(668, 71);
+            textBoxCase1.Name = "textBoxCase1";
+            textBoxCase1.Size = new Size(125, 27);
+            textBoxCase1.TabIndex = 9;
+            textBoxCase1.Text = "How much Kilo?";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(995, 612);
+            Controls.Add(textBoxCase1);
+            Controls.Add(buttonCase1);
+            Controls.Add(btnArray);
             Controls.Add(btnWhile);
             Controls.Add(button1);
             Controls.Add(txtUserName);
@@ -103,5 +137,8 @@
         private TextBox txtUserName;
         private Button button1;
         private Button btnWhile;
+        private Button btnArray;
+        private Button buttonCase1;
+        private TextBox textBoxCase1;
     }
 }

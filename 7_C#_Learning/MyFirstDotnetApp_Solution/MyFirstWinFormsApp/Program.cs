@@ -15,19 +15,6 @@ namespace MyFirstWinFormsApp
 
 
 
-            //int i = 10;
-
-            //if (i > 10)
-            //{
-            //    MessageBox.Show("i > 10");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("i <= 10");
-            //}
-
-            ////////////////////////////////////////////////
-
 
         }
     }

@@ -70,7 +70,7 @@ namespace MyFirstWinFormsApp
                 {
                     MessageBox.Show("Start!!!");
                 }
-                if (i==5)
+                if (i == 5)
                 {
                     continue;
                 }
@@ -81,7 +81,7 @@ namespace MyFirstWinFormsApp
 
         private void btnWhile_Click(object sender, EventArgs e)
         {
-            int i =0;
+            int i = 0;
             //while (i<10)
             //{
             //    i++;
@@ -93,5 +93,69 @@ namespace MyFirstWinFormsApp
             }
             while (i < 10);
         }
+
+        private void btnArray_Click(object sender, EventArgs e)
+        {
+            int[] ints = new int[6]; //Array creation must have array size or array initializer
+            ints[0] = 1;
+            ints[1] = 2;
+            ints[2] = 3;
+            ints[3] = 4;
+            ints[4] = 5;
+            ints[5] = 6;
+            //ints[6] = 7; // System.IndexOutOfRangeException: 'Index was outside the bounds of the array.'
+
+            int[] ints2 = new int[] { 0, 1, 2, 3, 4, 5, 6 };
+            ints2[0] = 1;
+            //ints2[8] = 7; // System.IndexOutOfRangeException: 'Index was outside the bounds of the array.'
+
+            int[] ints3 = { 0, 1, 2 };
+
+            //int i = ints[1];
+
+            //int len = ints3.Length;
+            //for (int i=0; i<ints3.Length; i++)
+            //{
+            //   MessageBox.Show( ints3[i] + "");
+            //}
+
+            string[] strs = { "Hello ", "My ", "Name" };
+            for (int i = 0; i < strs.Length; i++)
+            {
+                MessageBox.Show(strs[i]);
+            }
+
+        }
+
+
+        // case 1:
+        private void buttonCase1_Click(object sender, EventArgs e)
+        {
+            double price = 1.9;
+            //string kilo_string = textBoxCase1.Text;
+            try
+            {
+                double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
+                double dis = 7.5; // discount
+                double totalPrice = price * kilo;
+                if (price * kilo >= 10)
+                {
+                    totalPrice = totalPrice * dis;
+                }
+                else dis = 0.0;
+                //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
+                MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\nTotal Price is: {Math.Round(totalPrice)}, the discount is: {dis}");
+            }
+            catch
+            {
+                MessageBox.Show("Wrong number");
+            }
+
+
+
+
+        }
+
+
     }
 }
