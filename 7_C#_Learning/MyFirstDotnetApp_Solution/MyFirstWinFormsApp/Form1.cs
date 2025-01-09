@@ -136,15 +136,15 @@ namespace MyFirstWinFormsApp
             try
             {
                 double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
-                double dis = 7.5; // discount
+                double dis = 0.75; // discount
                 double totalPrice = price * kilo;
-                if (price * kilo >= 10)
+                if (kilo >= 10)
                 {
                     totalPrice = totalPrice * dis;
                 }
                 else dis = 0.0;
                 //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
-                MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\nTotal Price is: {Math.Round(totalPrice)}, the discount is: {dis}");
+                MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG, Original Total Price is: {Math.Round(price * kilo, 2)}.\r\nTotal Price is: {Math.Round(totalPrice,2)}, the discount is: {dis}");
             }
             catch
             {
@@ -156,6 +156,41 @@ namespace MyFirstWinFormsApp
 
         }
 
+        private void btnCase1Plus_Click(object sender, EventArgs e)
+        {
+            double price = 1.9;
+            //string kilo_string = textBoxCase1.Text;
+            try
+            {
+                
+                double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
+                double dis = 0.75; // discount
+                double totalPrice = price * kilo;
+                double discount_part = 0;
+                double ten_count = 0;
+                if (kilo >= 10)
+                {
+                    ten_count = (int) (totalPrice / 10);
+//(int)5.21      5
+//int.Parse() string to int;  the string should be int cannot be double format;
+//double.Parse(ten_count.ToString());
 
+
+
+                    //MessageBox.Show("ten_count: "+ ten_count);
+                    //MessageBox.Show("totalPrice % 10: " + (totalPrice % 10));
+                    discount_part = ten_count * 10 * dis;
+                    totalPrice = (ten_count *10* dis) + totalPrice % 10;
+
+                }
+                else dis = 0.0;
+                //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
+                MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG, Original Total Price is: {Math.Round(price * kilo, 2)}.\r\nThe discount is: {ten_count} times {dis}, discount part is {discount_part}.\r\nTotal Price is: {Math.Round(totalPrice, 2)}.");
+            }
+            catch
+            {
+                MessageBox.Show("Wrong number");
+            }
+        }
     }
 }

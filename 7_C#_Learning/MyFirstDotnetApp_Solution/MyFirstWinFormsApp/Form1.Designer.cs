@@ -36,6 +36,7 @@
             btnArray = new Button();
             buttonCase1 = new Button();
             textBoxCase1 = new TextBox();
+            btnCase1Plus = new Button();
             SuspendLayout();
             // 
             // btnCheckName
@@ -112,11 +113,22 @@
             textBoxCase1.TabIndex = 9;
             textBoxCase1.Text = "How much Kilo?";
             // 
+            // btnCase1Plus
+            // 
+            btnCase1Plus.Location = new Point(680, 196);
+            btnCase1Plus.Name = "btnCase1Plus";
+            btnCase1Plus.Size = new Size(94, 29);
+            btnCase1Plus.TabIndex = 10;
+            btnCase1Plus.Text = "Case1_Plus";
+            btnCase1Plus.UseVisualStyleBackColor = true;
+            btnCase1Plus.Click += btnCase1Plus_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(995, 612);
+            Controls.Add(btnCase1Plus);
             Controls.Add(textBoxCase1);
             Controls.Add(buttonCase1);
             Controls.Add(btnArray);
@@ -140,5 +152,6 @@
         private Button btnArray;
         private Button buttonCase1;
         private TextBox textBoxCase1;
+        private Button btnCase1Plus;
     }
 }
