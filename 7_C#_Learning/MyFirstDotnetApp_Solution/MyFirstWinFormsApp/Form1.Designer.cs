@@ -37,11 +37,16 @@
             buttonCase1 = new Button();
             textBoxCase1 = new TextBox();
             btnCase1Plus = new Button();
+            btnParse = new Button();
+            btnCase2 = new Button();
+            textBoxCase2 = new TextBox();
+            btnCase2While = new Button();
+            btnCase2DoWhich = new Button();
             SuspendLayout();
             // 
             // btnCheckName
             // 
-            btnCheckName.Location = new Point(306, 121);
+            btnCheckName.Location = new Point(64, 113);
             btnCheckName.Name = "btnCheckName";
             btnCheckName.Size = new Size(94, 29);
             btnCheckName.TabIndex = 1;
@@ -51,7 +56,7 @@
             // 
             // btnFor
             // 
-            btnFor.Location = new Point(306, 210);
+            btnFor.Location = new Point(64, 202);
             btnFor.Name = "btnFor";
             btnFor.Size = new Size(94, 29);
             btnFor.TabIndex = 3;
@@ -61,7 +66,7 @@
             // 
             // txtUserName
             // 
-            txtUserName.Location = new Point(273, 61);
+            txtUserName.Location = new Point(31, 53);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(170, 27);
             txtUserName.TabIndex = 4;
@@ -77,7 +82,7 @@
             // 
             // btnWhile
             // 
-            btnWhile.Location = new Point(306, 313);
+            btnWhile.Location = new Point(64, 305);
             btnWhile.Name = "btnWhile";
             btnWhile.Size = new Size(94, 29);
             btnWhile.TabIndex = 6;
@@ -87,7 +92,7 @@
             // 
             // btnArray
             // 
-            btnArray.Location = new Point(306, 408);
+            btnArray.Location = new Point(64, 400);
             btnArray.Name = "btnArray";
             btnArray.Size = new Size(94, 29);
             btnArray.TabIndex = 7;
@@ -97,7 +102,7 @@
             // 
             // buttonCase1
             // 
-            buttonCase1.Location = new Point(680, 117);
+            buttonCase1.Location = new Point(275, 99);
             buttonCase1.Name = "buttonCase1";
             buttonCase1.Size = new Size(94, 29);
             buttonCase1.TabIndex = 8;
@@ -107,7 +112,7 @@
             // 
             // textBoxCase1
             // 
-            textBoxCase1.Location = new Point(668, 71);
+            textBoxCase1.Location = new Point(263, 53);
             textBoxCase1.Name = "textBoxCase1";
             textBoxCase1.Size = new Size(125, 27);
             textBoxCase1.TabIndex = 9;
@@ -115,7 +120,7 @@
             // 
             // btnCase1Plus
             // 
-            btnCase1Plus.Location = new Point(680, 196);
+            btnCase1Plus.Location = new Point(275, 178);
             btnCase1Plus.Name = "btnCase1Plus";
             btnCase1Plus.Size = new Size(94, 29);
             btnCase1Plus.TabIndex = 10;
@@ -123,11 +128,64 @@
             btnCase1Plus.UseVisualStyleBackColor = true;
             btnCase1Plus.Click += btnCase1Plus_Click;
             // 
+            // btnParse
+            // 
+            btnParse.Location = new Point(275, 255);
+            btnParse.Name = "btnParse";
+            btnParse.Size = new Size(94, 29);
+            btnParse.TabIndex = 11;
+            btnParse.Text = "Convert";
+            btnParse.UseVisualStyleBackColor = true;
+            btnParse.Click += btnParse_Click;
+            // 
+            // btnCase2
+            // 
+            btnCase2.Location = new Point(275, 400);
+            btnCase2.Name = "btnCase2";
+            btnCase2.Size = new Size(113, 29);
+            btnCase2.TabIndex = 12;
+            btnCase2.Text = "Case2_for";
+            btnCase2.UseVisualStyleBackColor = true;
+            btnCase2.Click += btnCase2_Click;
+            // 
+            // textBoxCase2
+            // 
+            textBoxCase2.Location = new Point(263, 353);
+            textBoxCase2.Name = "textBoxCase2";
+            textBoxCase2.Size = new Size(125, 27);
+            textBoxCase2.TabIndex = 13;
+            textBoxCase2.Text = "Find which?";
+            // 
+            // btnCase2While
+            // 
+            btnCase2While.Location = new Point(275, 465);
+            btnCase2While.Name = "btnCase2While";
+            btnCase2While.Size = new Size(113, 29);
+            btnCase2While.TabIndex = 14;
+            btnCase2While.Text = "Case2_while";
+            btnCase2While.UseVisualStyleBackColor = true;
+            btnCase2While.Click += btnCase2While_Click;
+            // 
+            // btnCase2DoWhich
+            // 
+            btnCase2DoWhich.Location = new Point(266, 512);
+            btnCase2DoWhich.Name = "btnCase2DoWhich";
+            btnCase2DoWhich.Size = new Size(122, 29);
+            btnCase2DoWhich.TabIndex = 15;
+            btnCase2DoWhich.Text = "Case2_do_while";
+            btnCase2DoWhich.UseVisualStyleBackColor = true;
+            btnCase2DoWhich.Click += btnCase2DoWhich_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(995, 612);
+            Controls.Add(btnCase2DoWhich);
+            Controls.Add(btnCase2While);
+            Controls.Add(textBoxCase2);
+            Controls.Add(btnCase2);
+            Controls.Add(btnParse);
             Controls.Add(btnCase1Plus);
             Controls.Add(textBoxCase1);
             Controls.Add(buttonCase1);
@@ -153,5 +211,10 @@
         private Button buttonCase1;
         private TextBox textBoxCase1;
         private Button btnCase1Plus;
+        private Button btnParse;
+        private Button btnCase2;
+        private TextBox textBoxCase2;
+        private Button btnCase2While;
+        private Button btnCase2DoWhich;
     }
 }

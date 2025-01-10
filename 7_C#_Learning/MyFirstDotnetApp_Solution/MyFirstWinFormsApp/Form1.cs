@@ -144,7 +144,7 @@ namespace MyFirstWinFormsApp
                 }
                 else dis = 0.0;
                 //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
-                MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG, Original Total Price is: {Math.Round(price * kilo, 2)}.\r\nTotal Price is: {Math.Round(totalPrice,2)}, the discount is: {dis}");
+                MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG, Original Total Price is: {Math.Round(price * kilo, 2)}.\r\nTotal Price is: {Math.Round(totalPrice, 2)}, the discount is: {dis}");
             }
             catch
             {
@@ -162,7 +162,7 @@ namespace MyFirstWinFormsApp
             //string kilo_string = textBoxCase1.Text;
             try
             {
-                
+
                 double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
                 double dis = 0.75; // discount
                 double totalPrice = price * kilo;
@@ -170,17 +170,17 @@ namespace MyFirstWinFormsApp
                 double ten_count = 0;
                 if (kilo >= 10)
                 {
-                    ten_count = (int) (totalPrice / 10);
-//(int)5.21      5
-//int.Parse() string to int;  the string should be int cannot be double format;
-//double.Parse(ten_count.ToString());
+                    ten_count = (int)(totalPrice / 10);
+                    //(int)5.21      5
+                    //int.Parse() string to int;  the string should be int cannot be double format;
+                    //double.Parse(ten_count.ToString());
 
 
 
                     //MessageBox.Show("ten_count: "+ ten_count);
                     //MessageBox.Show("totalPrice % 10: " + (totalPrice % 10));
                     discount_part = ten_count * 10 * dis;
-                    totalPrice = (ten_count *10* dis) + totalPrice % 10;
+                    totalPrice = (ten_count * 10 * dis) + totalPrice % 10;
 
                 }
                 else dis = 0.0;
@@ -191,6 +191,120 @@ namespace MyFirstWinFormsApp
             {
                 MessageBox.Show("Wrong number");
             }
+        }
+
+        private void btnParse_Click(object sender, EventArgs e)
+        {
+            string str = "5.1";
+            double dou = 5.21;
+            double i1 = double.Parse(str);
+            //int i2 = int.Parse(dou);
+            MessageBox.Show($"4.3: {Convert.ToInt32(4.3).ToString()}\r\n" +
+                $"4.5: {Convert.ToInt32(4.5).ToString()}\r\n" +
+                $"4.56: {Convert.ToInt32(4.56).ToString()}\r\n" +
+                $"4.7: {Convert.ToInt32(4.7).ToString()}\r\n" +
+                $"5.5: {Convert.ToInt32(5.5).ToString()}\r\n");
+
+            MessageBox.Show($"Convert.ToInt32(null): {Convert.ToInt32(null).ToString()}\r\n"); // 0
+            //$"int.ToInt32(null): {int.ToInt32(null).ToString()}\r\n" //'int' does not contain a definition for 'ToInt32'
+        }
+
+        private void btnCase2_Click(object sender, EventArgs e)
+        {
+            string[] strs = { "a", "b", "c", "d", "e", "f", "g", "h" };
+
+            bool state = false;
+            int number = 0;
+            for (int i = 0; i < strs.Length; i++)
+            {
+
+                if (strs[i] == textBoxCase2.Text)
+                {
+                    state = true;
+                    number = i + 1;
+                }
+            }
+            if (state == true)
+            {
+                MessageBox.Show($"Find it! It is the {number} one");
+            }
+            else
+            {
+                MessageBox.Show("Not at here!!!");
+            };
+
+
+        }
+
+        private void btnCase2While_Click(object sender, EventArgs e)
+        {
+            string[] strs = { "a", "b", "c", "d", "e", "f", "g", "h" };
+
+            bool state = false;
+            int number = 0;
+            int i = 0;
+            while (i < strs.Length)
+            {
+                if (strs[i] == textBoxCase2.Text)
+                {
+                    state = true;
+                    number = i + 1;
+                };
+                i++;
+            }
+            if (state == true)
+            {
+                MessageBox.Show($"Find it! It is the {number} one");
+            }
+            else
+            {
+                MessageBox.Show("Not at here!!!");
+            };
+
+            //string user = "";
+            //while (user != textBoxCase2.Text)
+            //{
+            //    user = strs[i++];
+            //    if (user == textBoxCase2.Text)
+            //    {
+            //        MessageBox.Show($"Find it! It is the {number} one");
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Not at here!!!");
+            //    };
+            //}
+
+
+        }
+
+        private void btnCase2DoWhich_Click(object sender, EventArgs e)
+        {
+            string[] strs = { "a", "b", "c", "d", "e", "f", "g", "h" };
+
+            bool state = false;
+            int number = 0;
+            int i = 0;
+
+            do
+            {
+                if (strs[i] == textBoxCase2.Text)
+                {
+                    state = true;
+                    number = i + 1;
+                };
+                i++;
+            }
+            while (i < strs.Length);
+
+            if (state == true)
+            {
+                MessageBox.Show($"Find it! It is the {number} one");
+            }
+            else
+            {
+                MessageBox.Show("Not at here!!!");
+            };
         }
     }
 }
