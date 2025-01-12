@@ -1,8 +1,8 @@
 namespace MyFirstWinFormsApp
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
-        public Form1()
+        public form1()
         {
             InitializeComponent();
         }
@@ -305,6 +305,77 @@ namespace MyFirstWinFormsApp
             {
                 MessageBox.Show("Not at here!!!");
             };
+        }
+
+        private void btnFunction_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                int left = int.Parse(textBox_left.Text);
+                int right = int.Parse(textBox_right.Text);
+                MessageBox.Show(Add(left, right).ToString());
+            }
+            catch { MessageBox.Show("Wrong numbers!!!"); }
+        }
+
+        int Add(int leftNum, int rightNum)
+        {
+            return leftNum + rightNum;
+        }
+        void Sub(int leftNum, int rightNum, out int res)
+        {
+            res = leftNum - rightNum;
+        }
+
+
+        private void btnOut_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //int res;
+                int left = int.Parse(textBox_left.Text);
+                int right = int.Parse(textBox_right.Text);
+                Sub(left, right, out int res);
+                MessageBox.Show(res.ToString());
+            }
+            catch { MessageBox.Show("Wrong numbers!!!"); }
+        }
+
+        private void btnRef_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int res = 0;   // !!!!!!
+                int left = int.Parse(textBox_left.Text);
+                int right = int.Parse(textBox_right.Text);
+                Sub2(left, right, ref res);
+                MessageBox.Show(res.ToString());
+            }
+            catch { MessageBox.Show("Wrong numbers!!!"); }
+        }
+        void Sub2(int leftNum, int rightNum, ref int res)
+        {
+            res = leftNum - rightNum;
+        }
+
+        private void btnParams_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //int res = 0;   // !!!!!!
+                int left = int.Parse(textBox_left.Text);
+                int right = int.Parse(textBox_right.Text);
+                var res = Add2(left, right);
+                MessageBox.Show(res.ToString());
+            }
+            catch { MessageBox.Show("Wrong numbers!!!"); }
+        }
+
+        int Add2(params int[] ints) /// params should be the last. 
+        {
+            int res2 = ints[0] + ints[1];
+            return res2;
         }
     }
 }

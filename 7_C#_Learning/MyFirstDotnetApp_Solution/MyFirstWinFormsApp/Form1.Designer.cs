@@ -1,6 +1,6 @@
 ﻿namespace MyFirstWinFormsApp
 {
-    partial class Form1
+    partial class form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,6 @@
             btnCheckName = new Button();
             btnFor = new Button();
             txtUserName = new TextBox();
-            button1 = new Button();
             btnWhile = new Button();
             btnArray = new Button();
             buttonCase1 = new Button();
@@ -42,6 +41,12 @@
             textBoxCase2 = new TextBox();
             btnCase2While = new Button();
             btnCase2DoWhich = new Button();
+            btnFunction = new Button();
+            textBox_left = new TextBox();
+            textBox_right = new TextBox();
+            btnOut = new Button();
+            btnRef = new Button();
+            btnParams = new Button();
             SuspendLayout();
             // 
             // btnCheckName
@@ -70,15 +75,6 @@
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(170, 27);
             txtUserName.TabIndex = 4;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 5;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // btnWhile
             // 
@@ -176,11 +172,71 @@
             btnCase2DoWhich.UseVisualStyleBackColor = true;
             btnCase2DoWhich.Click += btnCase2DoWhich_Click;
             // 
-            // Form1
+            // btnFunction
+            // 
+            btnFunction.Location = new Point(545, 99);
+            btnFunction.Name = "btnFunction";
+            btnFunction.Size = new Size(109, 29);
+            btnFunction.TabIndex = 16;
+            btnFunction.Text = "Add_Function";
+            btnFunction.UseVisualStyleBackColor = true;
+            btnFunction.Click += btnFunction_Click;
+            // 
+            // textBox_left
+            // 
+            textBox_left.Location = new Point(545, 52);
+            textBox_left.Name = "textBox_left";
+            textBox_left.Size = new Size(41, 27);
+            textBox_left.TabIndex = 17;
+            // 
+            // textBox_right
+            // 
+            textBox_right.Location = new Point(604, 52);
+            textBox_right.Name = "textBox_right";
+            textBox_right.Size = new Size(35, 27);
+            textBox_right.TabIndex = 18;
+            // 
+            // btnOut
+            // 
+            btnOut.Location = new Point(545, 165);
+            btnOut.Name = "btnOut";
+            btnOut.Size = new Size(94, 29);
+            btnOut.TabIndex = 19;
+            btnOut.Text = "out";
+            btnOut.UseVisualStyleBackColor = true;
+            btnOut.Click += btnOut_Click;
+            // 
+            // btnRef
+            // 
+            btnRef.Location = new Point(545, 227);
+            btnRef.Name = "btnRef";
+            btnRef.Size = new Size(94, 29);
+            btnRef.TabIndex = 20;
+            btnRef.Text = "ref";
+            btnRef.UseVisualStyleBackColor = true;
+            btnRef.Click += btnRef_Click;
+            // 
+            // btnParams
+            // 
+            btnParams.Location = new Point(545, 305);
+            btnParams.Name = "btnParams";
+            btnParams.Size = new Size(94, 29);
+            btnParams.TabIndex = 21;
+            btnParams.Text = "params";
+            btnParams.UseVisualStyleBackColor = true;
+            btnParams.Click += btnParams_Click;
+            // 
+            // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(995, 612);
+            Controls.Add(btnParams);
+            Controls.Add(btnRef);
+            Controls.Add(btnOut);
+            Controls.Add(textBox_right);
+            Controls.Add(textBox_left);
+            Controls.Add(btnFunction);
             Controls.Add(btnCase2DoWhich);
             Controls.Add(btnCase2While);
             Controls.Add(textBoxCase2);
@@ -191,11 +247,10 @@
             Controls.Add(buttonCase1);
             Controls.Add(btnArray);
             Controls.Add(btnWhile);
-            Controls.Add(button1);
             Controls.Add(txtUserName);
             Controls.Add(btnFor);
             Controls.Add(btnCheckName);
-            Name = "Form1";
+            Name = "form1";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -205,7 +260,6 @@
         private Button btnCheckName;
         private Button btnFor;
         private TextBox txtUserName;
-        private Button button1;
         private Button btnWhile;
         private Button btnArray;
         private Button buttonCase1;
@@ -216,5 +270,11 @@
         private TextBox textBoxCase2;
         private Button btnCase2While;
         private Button btnCase2DoWhich;
+        private Button btnFunction;
+        private TextBox textBox_left;
+        private TextBox textBox_right;
+        private Button btnOut;
+        private Button btnRef;
+        private Button btnParams;
     }
 }
