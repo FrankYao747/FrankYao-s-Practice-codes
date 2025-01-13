@@ -1,3 +1,5 @@
+using System.Net;
+
 namespace MyFirstWinFormsApp
 {
     public partial class form1 : Form
@@ -131,27 +133,48 @@ namespace MyFirstWinFormsApp
         // case 1:
         private void buttonCase1_Click(object sender, EventArgs e)
         {
-            double price = 1.9;
+
             //string kilo_string = textBoxCase1.Text;
             try
             {
-                double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
+                //double price = 1.9;
+                //double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
+                //double dis = 0.75; // discount
+                //double totalPrice = price * kilo;
+                //if (kilo >= 10)
+                //{
+                //    totalPrice = totalPrice * dis;
+                //}
+                //else dis = 0.0;
+                ////MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
+                //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG, Original Total Price is: {Math.Round(price * kilo, 2)}.\r\nTotal Price is: {Math.Round(totalPrice, 2)}, the discount is: {dis}");
+
                 double dis = 0.75; // discount
+                double price = 1.9;
+                double kilo = Convert.ToDouble(textBoxCase1.Text); // the kilo you want to buy
                 double totalPrice = price * kilo;
                 if (kilo >= 10)
                 {
-                    totalPrice = totalPrice * dis;
+                    totalPrice =  BuyMelon(kilo, ref dis, ref price, ref totalPrice);
                 }
-                else dis = 0.0;
+
                 //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
                 MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG, Original Total Price is: {Math.Round(price * kilo, 2)}.\r\nTotal Price is: {Math.Round(totalPrice, 2)}, the discount is: {dis}");
+
             }
             catch
             {
                 MessageBox.Show("Wrong number");
             }
 
+            double BuyMelon(double kilo, ref double dis, ref double price, ref double totalPrice)
+            {
 
+                
+                totalPrice = totalPrice * dis;
+
+                return totalPrice;
+            }
 
 
         }
