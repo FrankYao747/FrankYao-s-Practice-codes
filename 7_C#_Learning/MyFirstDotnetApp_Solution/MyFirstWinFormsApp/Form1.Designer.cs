@@ -47,6 +47,7 @@
             btnOut = new Button();
             btnRef = new Button();
             btnParams = new Button();
+            btnDesignClass = new Button();
             SuspendLayout();
             // 
             // btnCheckName
@@ -226,11 +227,22 @@
             btnParams.UseVisualStyleBackColor = true;
             btnParams.Click += btnParams_Click;
             // 
+            // btnDesignClass
+            // 
+            btnDesignClass.Location = new Point(728, 53);
+            btnDesignClass.Name = "btnDesignClass";
+            btnDesignClass.Size = new Size(102, 29);
+            btnDesignClass.TabIndex = 22;
+            btnDesignClass.Text = "ClassDesign";
+            btnDesignClass.UseVisualStyleBackColor = true;
+            btnDesignClass.Click += btnDesignClass_Click;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(995, 612);
+            Controls.Add(btnDesignClass);
             Controls.Add(btnParams);
             Controls.Add(btnRef);
             Controls.Add(btnOut);
@@ -276,5 +288,6 @@
         private Button btnOut;
         private Button btnRef;
         private Button btnParams;
+        private Button btnDesignClass;
     }
 }

@@ -1,3 +1,5 @@
+using MyFirstWinFormsApp.Common;
+using MyFirstWinFormsApp.Models;
 using System.Net;
 
 namespace MyFirstWinFormsApp
@@ -155,7 +157,7 @@ namespace MyFirstWinFormsApp
                 double totalPrice = price * kilo;
                 if (kilo >= 10)
                 {
-                    totalPrice =  BuyMelon(kilo, ref dis, ref price, ref totalPrice);
+                    totalPrice = BuyMelon(kilo, ref dis, ref price, ref totalPrice);
                 }
 
                 //MessageBox.Show($"Single Price is: {price}, You buy: {kilo} KG\r\n");
@@ -170,7 +172,7 @@ namespace MyFirstWinFormsApp
             double BuyMelon(double kilo, ref double dis, ref double price, ref double totalPrice)
             {
 
-                
+
                 totalPrice = totalPrice * dis;
 
                 return totalPrice;
@@ -399,6 +401,24 @@ namespace MyFirstWinFormsApp
         {
             int res2 = ints[0] + ints[1];
             return res2;
+        }
+
+        private void btnDesignClass_Click(object sender, EventArgs e)
+        {
+            //Person Frank = new Person();
+            //Frank.Name = "Frank";
+            //Frank.Age = 35;
+            //Frank.Id = 1111111;
+
+            Person Frank = new Person()  //             Person Frank = new()
+            {
+                Id = 111111,
+                Name = "Frank",
+                Age = 35
+            };
+
+            string res = Frank.Run();
+            MessageBox.Show(res.AddFullStop());
         }
     }
 }
