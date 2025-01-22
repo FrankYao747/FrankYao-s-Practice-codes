@@ -13,7 +13,17 @@ namespace MyFirstWinFormsApp.Models
 
         public void Run()
         {
-            MessageBox.Show("Car Running!!!");
+            MessageBox.Show($"{Color} Car is Running!!! It is {Length} long");
+        }
+    }
+
+    public class Truck(): Car
+    {
+        public string Carriage { get; set; }
+
+        public string Freight()
+        {
+            return $"{Color} Truck is Running!!! It is {Length} long. And it is transporting {Carriage}";
         }
     }
 }

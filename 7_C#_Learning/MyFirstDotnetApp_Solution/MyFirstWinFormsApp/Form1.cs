@@ -420,5 +420,23 @@ namespace MyFirstWinFormsApp
             string res = Frank.Run();
             MessageBox.Show(res.AddFullStop());
         }
+
+        private void btnInherit_Click(object sender, EventArgs e)
+        {
+            //Car car = new Car();
+            //car.Color = "Red";
+            //car.Length = 4;
+            //car.Run();
+
+            Truck truck = new Truck();
+            truck.Color = "Blue";
+            truck.Length = 8;
+            truck.Carriage = "apples";
+            truck.Run();
+
+            string res = truck.Freight();
+            MessageBox.Show(res.AddFullStop());
+
+        }
     }
 }
