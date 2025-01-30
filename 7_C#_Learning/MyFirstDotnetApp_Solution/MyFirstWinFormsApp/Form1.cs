@@ -423,6 +423,13 @@ namespace MyFirstWinFormsApp
 
         private void btnInherit_Click(object sender, EventArgs e)
         {
+            //object obj = 21312312;
+            //string str1 = (string)obj;
+            //int? str2 = obj as int?;
+            //string str3 = obj as string;
+
+
+
             //Car car = new Car();
             //car.Color = "Red";
             //car.Length = 4;
@@ -432,11 +439,29 @@ namespace MyFirstWinFormsApp
             truck.Color = "Blue";
             truck.Length = 8;
             truck.Carriage = "apples";
-            truck.Run();
+            //truck.Run();
+            RunCar(truck);
+            //string res = truck.Freight();
+            //MessageBox.Show(res.AddFullStop());
 
-            string res = truck.Freight();
-            MessageBox.Show(res.AddFullStop());
 
+            //Car car = new Car();
+            ////Truck truck = new Truck();
+            //car = truck;
+            //MessageBox.Show(car.Color+"");
+            //MessageBox.Show(car.Length+"");
+
+            SUV suv = new SUV();
+            suv.Color = "White";
+            suv.Length = 5;
+            suv.Seats = "5 seats";
+            RunCar(suv);
+        }
+
+        private void RunCar(Car car)
+        {
+            Truck? truck = car as Truck;
+            car.Run();
         }
     }
 }
