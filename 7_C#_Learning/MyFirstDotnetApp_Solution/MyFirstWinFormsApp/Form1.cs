@@ -1,4 +1,5 @@
 using MyFirstWinFormsApp.Common;
+using MyFirstWinFormsApp.Interfaces;
 using MyFirstWinFormsApp.Models;
 using System.Net;
 
@@ -462,6 +463,12 @@ namespace MyFirstWinFormsApp
         {
             Truck? truck = car as Truck;
             car.Run();
+        }
+
+        private void btnInterface_Click(object sender, EventArgs e)
+        {
+            IUser user = new User();
+            user.SayHello();
         }
     }
 }
