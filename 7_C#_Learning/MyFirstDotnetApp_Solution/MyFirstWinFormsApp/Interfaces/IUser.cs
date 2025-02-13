@@ -8,7 +8,8 @@ namespace MyFirstWinFormsApp.Interfaces
 {
     public interface IUser
     {
-        public int Count { get; set; }
+        public string UserName { get; set; }
         void SayHello();
+
     }
 }

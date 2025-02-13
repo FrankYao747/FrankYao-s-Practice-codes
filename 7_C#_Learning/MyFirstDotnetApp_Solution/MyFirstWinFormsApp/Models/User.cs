@@ -9,11 +9,15 @@ namespace MyFirstWinFormsApp.Models
 {
     class User : IUser
     {
-        public int Count { get ; set ; }
+        public User()
+        {
+            
+        }
+        public string UserName { get ; set ; }
 
         public void SayHello()
         {
-        MessageBox.Show("This is SayHello method!!!");
+        MessageBox.Show($"This is {UserName}'s SayHello method!!!");
         }
 
         //void SayHello(int i)

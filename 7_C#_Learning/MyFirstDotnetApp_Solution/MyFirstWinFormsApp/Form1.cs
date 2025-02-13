@@ -467,8 +467,23 @@ namespace MyFirstWinFormsApp
 
         private void btnInterface_Click(object sender, EventArgs e)
         {
-            IUser user = new User();
-            user.SayHello();
+            IUser user = new User
+            {
+                UserName = "Frank"
+            };
+            Truck truck = new Truck(user);
+            truck.Length = 10;
+            truck.Run();
+
+        }
+
+        private void btnInterface2_Click(object sender, EventArgs e)
+        {
+            IUsb light = new Light("Lamp");
+            light.EquipmentWorking();
+
+            IUsb uflash = new Uflash("Uflash");
+            uflash.EquipmentWorking();
         }
     }
 }
