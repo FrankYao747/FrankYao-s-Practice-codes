@@ -485,5 +485,28 @@ namespace MyFirstWinFormsApp
             IUsb uflash = new Uflash("Uflash");
             uflash.EquipmentWorking();
         }
+
+        private void btnOrgStr_Click(object sender, EventArgs e)
+        {
+            string str = "My " +
+                "name is Frank";
+            label1.Text = str;
+            string obj = "(testing! testing! testing!)";
+            string oStr =   $"""
+                            His 
+                            name 
+                            is {obj}
+                                Peter
+                            """;
+            label2.Text = oStr;
+
+            string json = $$"""
+                {
+                name:"{{str}}",
+                age:35
+                }
+                """;
+            label3.Text = json;
+        }
     }
 }

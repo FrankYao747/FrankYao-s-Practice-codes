@@ -51,6 +51,10 @@
             btnInherit = new Button();
             btnInterface = new Button();
             btnInterface2 = new Button();
+            btnOrgStr = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // btnCheckName
@@ -270,11 +274,52 @@
             btnInterface2.UseVisualStyleBackColor = true;
             btnInterface2.Click += btnInterface2_Click;
             // 
+            // btnOrgStr
+            // 
+            btnOrgStr.Location = new Point(704, 368);
+            btnOrgStr.Name = "btnOrgStr";
+            btnOrgStr.Size = new Size(118, 29);
+            btnOrgStr.TabIndex = 26;
+            btnOrgStr.Text = "Original String";
+            btnOrgStr.UseVisualStyleBackColor = true;
+            btnOrgStr.Click += btnOrgStr_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(712, 424);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 27;
+            label1.Text = "label1";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(712, 465);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 20);
+            label2.TabIndex = 28;
+            label2.Text = "label2";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(712, 560);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 29;
+            label3.Text = "label3";
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(995, 612);
+            ClientSize = new Size(1254, 804);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(btnOrgStr);
             Controls.Add(btnInterface2);
             Controls.Add(btnInterface);
             Controls.Add(btnInherit);
@@ -328,5 +373,9 @@
         private Button btnInherit;
         private Button btnInterface;
         private Button btnInterface2;
+        private Button btnOrgStr;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }
