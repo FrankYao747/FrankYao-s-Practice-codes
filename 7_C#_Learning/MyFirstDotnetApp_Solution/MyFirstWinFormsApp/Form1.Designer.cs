@@ -55,6 +55,9 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            btnValueType = new Button();
+            label_i = new Label();
+            label_j = new Label();
             SuspendLayout();
             // 
             // btnCheckName
@@ -182,7 +185,7 @@
             // 
             // btnFunction
             // 
-            btnFunction.Location = new Point(545, 99);
+            btnFunction.Location = new Point(464, 100);
             btnFunction.Name = "btnFunction";
             btnFunction.Size = new Size(109, 29);
             btnFunction.TabIndex = 16;
@@ -192,21 +195,21 @@
             // 
             // textBox_left
             // 
-            textBox_left.Location = new Point(545, 52);
+            textBox_left.Location = new Point(464, 53);
             textBox_left.Name = "textBox_left";
             textBox_left.Size = new Size(41, 27);
             textBox_left.TabIndex = 17;
             // 
             // textBox_right
             // 
-            textBox_right.Location = new Point(604, 52);
+            textBox_right.Location = new Point(523, 53);
             textBox_right.Name = "textBox_right";
             textBox_right.Size = new Size(35, 27);
             textBox_right.TabIndex = 18;
             // 
             // btnOut
             // 
-            btnOut.Location = new Point(545, 165);
+            btnOut.Location = new Point(464, 166);
             btnOut.Name = "btnOut";
             btnOut.Size = new Size(94, 29);
             btnOut.TabIndex = 19;
@@ -216,7 +219,7 @@
             // 
             // btnRef
             // 
-            btnRef.Location = new Point(545, 227);
+            btnRef.Location = new Point(464, 228);
             btnRef.Name = "btnRef";
             btnRef.Size = new Size(94, 29);
             btnRef.TabIndex = 20;
@@ -226,7 +229,7 @@
             // 
             // btnParams
             // 
-            btnParams.Location = new Point(545, 305);
+            btnParams.Location = new Point(464, 306);
             btnParams.Name = "btnParams";
             btnParams.Size = new Size(94, 29);
             btnParams.TabIndex = 21;
@@ -236,7 +239,7 @@
             // 
             // btnDesignClass
             // 
-            btnDesignClass.Location = new Point(728, 53);
+            btnDesignClass.Location = new Point(647, 54);
             btnDesignClass.Name = "btnDesignClass";
             btnDesignClass.Size = new Size(102, 29);
             btnDesignClass.TabIndex = 22;
@@ -246,7 +249,7 @@
             // 
             // btnInherit
             // 
-            btnInherit.Location = new Point(728, 126);
+            btnInherit.Location = new Point(647, 127);
             btnInherit.Name = "btnInherit";
             btnInherit.Size = new Size(94, 29);
             btnInherit.TabIndex = 23;
@@ -256,7 +259,7 @@
             // 
             // btnInterface
             // 
-            btnInterface.Location = new Point(712, 227);
+            btnInterface.Location = new Point(631, 228);
             btnInterface.Name = "btnInterface";
             btnInterface.Size = new Size(94, 29);
             btnInterface.TabIndex = 24;
@@ -266,7 +269,7 @@
             // 
             // btnInterface2
             // 
-            btnInterface2.Location = new Point(712, 305);
+            btnInterface2.Location = new Point(631, 306);
             btnInterface2.Name = "btnInterface2";
             btnInterface2.Size = new Size(94, 29);
             btnInterface2.TabIndex = 25;
@@ -276,7 +279,7 @@
             // 
             // btnOrgStr
             // 
-            btnOrgStr.Location = new Point(704, 368);
+            btnOrgStr.Location = new Point(623, 369);
             btnOrgStr.Name = "btnOrgStr";
             btnOrgStr.Size = new Size(118, 29);
             btnOrgStr.TabIndex = 26;
@@ -287,7 +290,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(712, 424);
+            label1.Location = new Point(631, 425);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 27;
@@ -296,7 +299,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(712, 465);
+            label2.Location = new Point(631, 466);
             label2.Name = "label2";
             label2.Size = new Size(50, 20);
             label2.TabIndex = 28;
@@ -305,17 +308,48 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(712, 560);
+            label3.Location = new Point(631, 561);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 29;
             label3.Text = "label3";
+            // 
+            // btnValueType
+            // 
+            btnValueType.Location = new Point(859, 54);
+            btnValueType.Name = "btnValueType";
+            btnValueType.Size = new Size(94, 29);
+            btnValueType.TabIndex = 30;
+            btnValueType.Text = "Value Type";
+            btnValueType.UseVisualStyleBackColor = true;
+            btnValueType.Click += btnValueType_Click;
+            // 
+            // label_i
+            // 
+            label_i.AutoSize = true;
+            label_i.Location = new Point(883, 117);
+            label_i.Name = "label_i";
+            label_i.Size = new Size(50, 20);
+            label_i.TabIndex = 31;
+            label_i.Text = "label i";
+            // 
+            // label_j
+            // 
+            label_j.AutoSize = true;
+            label_j.Location = new Point(883, 166);
+            label_j.Name = "label_j";
+            label_j.Size = new Size(50, 20);
+            label_j.TabIndex = 32;
+            label_j.Text = "label j";
             // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1254, 804);
+            Controls.Add(label_j);
+            Controls.Add(label_i);
+            Controls.Add(btnValueType);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -377,5 +411,8 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button btnValueType;
+        private Label label_i;
+        private Label label_j;
     }
 }

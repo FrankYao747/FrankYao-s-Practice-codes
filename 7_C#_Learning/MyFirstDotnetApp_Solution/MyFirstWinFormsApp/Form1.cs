@@ -492,7 +492,7 @@ namespace MyFirstWinFormsApp
                 "name is Frank";
             label1.Text = str;
             string obj = "(testing! testing! testing!)";
-            string oStr =   $"""
+            string oStr = $"""
                             His 
                             name 
                             is {obj}
@@ -508,5 +508,54 @@ namespace MyFirstWinFormsApp
                 """;
             label3.Text = json;
         }
+
+        private void btnValueType_Click(object sender, EventArgs e)
+        {
+            //int i = 1;
+            //int j = i;
+            //j = 2;
+            //label_i.Text = $"i is: {i}";
+            //label_j.Text = $"j is: {j}";
+
+
+            ///////////////////////////////////////////////////
+            ///
+            //User user1 = new User();
+            //user1.UserName = "Frank";
+
+            //User user2 = user1;
+            //user2.UserName = "Peter";
+
+            //label_i.Text = $"user1: {user1.UserName}";
+            //label_j.Text = $"user2: {user2.UserName}";
+            ///////////////////////////////////////////////////
+
+            //int i = 10;
+            //label_i.Text = $"original i: {i}";
+            //EditVale(i);
+            //label_j.Text = $"current i: {i}";
+
+            ////////////////////////////////////////////////
+
+            User user1 = new User();
+
+            user1.UserName = "Frank";
+            label_i.Text = $"original user1.UserName: {user1.UserName}";
+
+            EditUser(user1);
+            label_j.Text = $"current user1.UserName: {user1.UserName}";
+
+
+        }
+
+        private void EditVale(int i)
+        {
+            i = i + 10;
+        }
+        private void EditUser(User user)
+        {
+            user.UserName = "Peter";
+        }
+
     }
 }
