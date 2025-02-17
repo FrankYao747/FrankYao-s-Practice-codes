@@ -58,6 +58,7 @@
             btnValueType = new Button();
             label_i = new Label();
             label_j = new Label();
+            btnArrayList = new Button();
             SuspendLayout();
             // 
             // btnCheckName
@@ -342,11 +343,22 @@
             label_j.TabIndex = 32;
             label_j.Text = "label j";
             // 
+            // btnArrayList
+            // 
+            btnArrayList.Location = new Point(859, 228);
+            btnArrayList.Name = "btnArrayList";
+            btnArrayList.Size = new Size(94, 29);
+            btnArrayList.TabIndex = 33;
+            btnArrayList.Text = "Array List";
+            btnArrayList.UseVisualStyleBackColor = true;
+            btnArrayList.Click += btnArrayList_Click;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1254, 804);
+            Controls.Add(btnArrayList);
             Controls.Add(label_j);
             Controls.Add(label_i);
             Controls.Add(btnValueType);
@@ -414,5 +426,6 @@
         private Button btnValueType;
         private Label label_i;
         private Label label_j;
+        private Button btnArrayList;
     }
 }

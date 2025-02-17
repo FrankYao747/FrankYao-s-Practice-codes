@@ -1,6 +1,7 @@
 using MyFirstWinFormsApp.Common;
 using MyFirstWinFormsApp.Interfaces;
 using MyFirstWinFormsApp.Models;
+using System.Collections;
 using System.Net;
 
 namespace MyFirstWinFormsApp
@@ -557,5 +558,30 @@ namespace MyFirstWinFormsApp
             user.UserName = "Peter";
         }
 
+        private void btnArrayList_Click(object sender, EventArgs e)
+        {
+            ArrayList arrayList2 = new ArrayList();
+            arrayList2.Add("a");
+            arrayList2.Add("ab");
+
+
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(1);
+            arrayList.Add("A");
+            arrayList.Insert(1, 2);
+            arrayList.Add("B");
+            arrayList.Add("C");
+
+            //arrayList.RemoveAt(0);
+            //arrayList.Remove("A");
+            arrayList.AddRange(arrayList2);
+            arrayList.RemoveRange(0, 2);
+
+            for (int i = 0; i < arrayList.Count; i++)
+            {
+                MessageBox.Show($"{arrayList[i]}");
+            }
+            
+        }
     }
 }
