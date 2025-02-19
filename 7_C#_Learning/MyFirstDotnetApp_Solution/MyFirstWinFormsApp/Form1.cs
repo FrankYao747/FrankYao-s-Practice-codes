@@ -581,7 +581,39 @@ namespace MyFirstWinFormsApp
             {
                 MessageBox.Show($"{arrayList[i]}");
             }
-            
+
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List<int> intList = new List<int>()
+            {
+                0,1,2,3,
+            };
+            intList.Add(1);
+            intList.Add(2);
+            intList.Add(3);
+            int i6 = intList[6];
+            intList.RemoveAt(0);
+            intList.RemoveAt(1);
+            intList.RemoveAt(2);
+            //i6 = intList[6];
+
+            List<string> strList = new List<string>();
+            strList.Add("a");
+            strList.Add("b");
+            strList.Add(1+"");
+
+            //List<object> objList = new List<object>();
+            //objList.Add(1);
+            //objList.Add("A");
+            //objList.Insert(1, 2);
+            //objList.Add("B");
+            //objList.Add("C");
+
+            ////objList.RemoveAt(0);
+            ////objList.Remove("A");
+            //objList.RemoveRange(0, 2);
         }
     }
 }
