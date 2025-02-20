@@ -614,6 +614,48 @@ namespace MyFirstWinFormsApp
             ////objList.RemoveAt(0);
             ////objList.Remove("A");
             //objList.RemoveRange(0, 2);
+
+            //List<Person> perList = new List<Person>();
+            //Person person1 = new Person();
+            //person1.Age = 35;
+            //person1.Name = "Frank";
+            //perList.Add(person1);
+
+            List<Person> perList = new List<Person>()
+            {
+                new Person(){Age =35, Id = 1, Name="Frank1"},
+                new Person(){Age =35, Id = 1, Name="Frank1"},
+                new Person(){Age =36, Id = 2, Name="Frank2"},
+                new Person(){Age =37, Id = 3, Name="Frank3"},
+                new Person(){Age =38, Id = 4, Name="Frank4"},
+            };
+            //perList.RemoveAt(0);
+            string s1 = "aaaa";
+            string s2 = "aaaa";
+
+            //Person p1 = new Person() { Age = 35, Id = 1, Name = "Frank" };
+            //Person p2 = new Person() { Age = 35, Id = 1, Name = "Frank" };
+            //var h1 = p1.GetHashCode();
+            //var h2 = p2.GetHashCode();
+            var frank = new Person() { Age = 35, Id = 1, Name = "Frank2" };
+            perList.Add(frank);
+            //perList.Remove(frank);
+            //perList.Remove(perList[0]);
+            //perList.First();
+
+            List<Person> resPersons = new List<Person>();  
+            Person resPerson = null;
+            //for (int i = 0; i < perList.Count; i++)
+            //{
+            //    Person p = perList[i];
+            //    if (p.Name == "Frank2") {
+            //        resPerson = p;
+            //        break;
+            //    }
+            //}
+
+            resPersons = perList.FindAll(m => m.Name == "Frank1");
+
         }
     }
 }
