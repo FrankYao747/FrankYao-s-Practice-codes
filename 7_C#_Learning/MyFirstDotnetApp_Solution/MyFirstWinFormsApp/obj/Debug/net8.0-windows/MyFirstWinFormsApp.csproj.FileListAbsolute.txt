@@ -15,3 +15,4 @@ C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution
 C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.pdb
 C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.genruntimeconfig.cache
 C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\ref\MyFirstWinFormsApp.dll
+C:\Git_courses\FrankYao-s-Practice-codes\7_C#_Learning\MyFirstDotnetApp_Solution\MyFirstWinFormsApp\obj\Debug\net8.0-windows\MyFirstWinFormsApp.FrmList.resources

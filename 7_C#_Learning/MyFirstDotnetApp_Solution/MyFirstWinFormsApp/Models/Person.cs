@@ -9,6 +9,7 @@ namespace MyFirstWinFormsApp.Models
     class Person
     {
         public int Id { get; set; }
+        //protected internal string Name { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
 

@@ -602,7 +602,7 @@ namespace MyFirstWinFormsApp
             List<string> strList = new List<string>();
             strList.Add("a");
             strList.Add("b");
-            strList.Add(1+"");
+            strList.Add(1 + "");
 
             //List<object> objList = new List<object>();
             //objList.Add(1);
@@ -643,7 +643,7 @@ namespace MyFirstWinFormsApp
             //perList.Remove(perList[0]);
             //perList.First();
 
-            List<Person> resPersons = new List<Person>();  
+            List<Person> resPersons = new List<Person>();
             Person resPerson = null;
             //for (int i = 0; i < perList.Count; i++)
             //{
@@ -655,6 +655,13 @@ namespace MyFirstWinFormsApp
             //}
 
             resPersons = perList.FindAll(m => m.Name == "Frank1");
+
+        }
+
+        private void btnListShow_Click(object sender, EventArgs e)
+        {
+            FrmList frmList = new FrmList();
+            frmList.ShowDialog();
 
         }
     }
