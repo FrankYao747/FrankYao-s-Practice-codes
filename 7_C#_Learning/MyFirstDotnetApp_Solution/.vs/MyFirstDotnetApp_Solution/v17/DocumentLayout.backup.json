@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|c:\\git_courses\\frankyao-s-practice-codes\\7_c#_learning\\myfirstdotnetapp_solution\\myfirstwinformsapp\\frmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\frmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|c:\\git_courses\\frankyao-s-practice-codes\\7_c#_learning\\myfirstdotnetapp_solution\\myfirstwinformsapp\\frmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\frmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|c:\\git_courses\\frankyao-s-practice-codes\\7_c#_learning\\myfirstdotnetapp_solution\\myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\myfirstwinformsapp\\frmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\frmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|c:\\git_courses\\frankyao-s-practice-codes\\7_c#_learning\\myfirstdotnetapp_solution\\myfirstwinformsapp\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|c:\\git_courses\\frankyao-s-practice-codes\\7_c#_learning\\myfirstdotnetapp_solution\\myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|solutionrelative:myfirstwinformsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51351F37-C8AB-49F9-856A-BA129A3F806D}|MyFirstWinFormsApp\\MyFirstWinFormsApp.csproj|c:\\git_courses\\frankyao-s-practice-codes\\7_c#_learning\\myfirstdotnetapp_solution\\myfirstwinformsapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -64,11 +64,11 @@
         },
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\Form1.cs",
               "RelativeDocumentMoniker": "MyFirstWinFormsApp\\Form1.cs",
@@ -82,20 +82,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FrmList.cs",
               "DocumentMoniker": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\FrmList.cs",
               "RelativeDocumentMoniker": "MyFirstWinFormsApp\\FrmList.cs",
               "ToolTip": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\FrmList.cs",
               "RelativeToolTip": "MyFirstWinFormsApp\\FrmList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwEIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T12:53:00.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FrmList.cs [Design]",
               "DocumentMoniker": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\FrmList.cs",
               "RelativeDocumentMoniker": "MyFirstWinFormsApp\\FrmList.cs",
@@ -113,10 +113,9 @@
               "RelativeDocumentMoniker": "MyFirstWinFormsApp\\Models\\Person.cs",
               "ToolTip": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\Models\\Person.cs",
               "RelativeToolTip": "MyFirstWinFormsApp\\Models\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T08:56:14.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T08:56:14.347Z"
             },
             {
               "$type": "Document",
@@ -192,15 +191,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\Form1.cs",
               "RelativeDocumentMoniker": "MyFirstWinFormsApp\\Form1.cs",
               "ToolTip": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstWinFormsApp\\Form1.cs [Design]",
               "RelativeToolTip": "MyFirstWinFormsApp\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:39:38.118Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-10T08:39:38.118Z"
             }
           ]
         }
