@@ -61,6 +61,7 @@
             btnArrayList = new Button();
             btnList = new Button();
             btnListShow = new Button();
+            btnDic = new Button();
             SuspendLayout();
             // 
             // btnCheckName
@@ -375,11 +376,22 @@
             btnListShow.UseVisualStyleBackColor = true;
             btnListShow.Click += btnListShow_Click;
             // 
+            // btnDic
+            // 
+            btnDic.Location = new Point(1030, 52);
+            btnDic.Name = "btnDic";
+            btnDic.Size = new Size(94, 29);
+            btnDic.TabIndex = 36;
+            btnDic.Text = "Dictionary";
+            btnDic.UseVisualStyleBackColor = true;
+            btnDic.Click += btnDic_Click;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1254, 804);
+            Controls.Add(btnDic);
             Controls.Add(btnListShow);
             Controls.Add(btnList);
             Controls.Add(btnArrayList);
@@ -453,5 +465,6 @@
         private Button btnArrayList;
         private Button btnList;
         private Button btnListShow;
+        private Button btnDic;
     }
 }

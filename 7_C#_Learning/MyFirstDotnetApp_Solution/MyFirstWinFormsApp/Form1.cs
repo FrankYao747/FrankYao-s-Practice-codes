@@ -664,5 +664,61 @@ namespace MyFirstWinFormsApp
             frmList.ShowDialog();
 
         }
+
+        private void btnDic_Click(object sender, EventArgs e)
+        {
+            Dictionary<int, string> dic = new Dictionary<int, string>();
+            dic.Add(1, "98c");
+            dic.Add(2, "98c");
+            dic.Add(3, "96c");
+            dic.Add(4, "95c");
+
+            dic[5] = "92c";
+            Dictionary<int, string> dic2 = new Dictionary<int, string>()
+            {
+                {1,"98c" },
+                {2,"98c" },
+                {3,"98c" },
+                {4,"98c" },
+            };
+
+            //GetDictionary(new Dictionary<int, string>
+            //{
+            //    {1,"98c" },
+            //    {2,"98c" },
+            //    {3,"98c" },
+            //    {4,"98c" },
+            //});
+
+
+
+
+            dic2[4] = "92c";
+            var value = dic2[4];
+
+            List <int> ints = new List<int>()
+            {
+                1,2,3,4,5,6,7,8,9
+            };
+
+            foreach(var item in dic2)
+            {
+                MessageBox.Show(item.Value);
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+        private void GetDictionary(Dictionary<int,string> dic)
+        {
+
+        }
     }
 }
