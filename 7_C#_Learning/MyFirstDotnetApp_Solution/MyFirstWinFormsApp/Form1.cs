@@ -703,16 +703,13 @@ namespace MyFirstWinFormsApp
 
             foreach(var item in dic2)
             {
-                MessageBox.Show(item.Value);
-            }
+                MessageBox.Show("item.Key:", item.Key + "");
+				MessageBox.Show( "item.Value:", item.Value+"");
 
-
-
-
-
-
-
-
+			}
+            MyKeyValuePair myKeyValuePair = new MyKeyValuePair(1, "99c");
+            var k = myKeyValuePair.Key;
+            var v = myKeyValuePair.Value;
 
         }
 
@@ -720,5 +717,64 @@ namespace MyFirstWinFormsApp
         {
 
         }
+
+        //Dictionary<string, string> dictionary = new Dictionary<string, string>() {
+        //    {"A", "aa" },
+        //    {"B", "bb" },
+        //    {"C", "cc" },
+
+        //};
+
+        //foreach (KeyValuePair<string,string> item in dictionary)
+        //    {
+        //    string key = item.Key;
+        //string value = itme.Value;
+        //    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+    public class MyKeyValuePair
+    {
+        private int _key;
+        private string _value;
+
+        public MyKeyValuePair(int key, string value)
+        {
+            _key = key;
+            _value = value;
+        }
+
+        //public int GetKey()
+        //{
+        //    return _key;
+        //}
+
+        //public void SetKey(int key)                                     ////      these two steps    = public int Key {get;set;}
+        //{
+        //    _key = key;
+        //}
+
+
+
+        //public int Key { 
+        //    get { return _key; 
+        //    } }
+
+        public int Key => _key;                                          /// the same as above
+        public string Value => _value;
+    }
+
+
 }

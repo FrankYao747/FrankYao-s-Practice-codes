@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9muCGK3pceE=",
+  "dgSpecHash": "UgN6JvCjS3c=",
   "success": true,
-  "projectFilePath": "C:\\Git_courses\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstDotnetApp\\MyFirstDotnetApp.csproj",
+  "projectFilePath": "C:\\IT_Learning\\gitlab\\FrankYao-s-Practice-codes\\7_C#_Learning\\MyFirstDotnetApp_Solution\\MyFirstDotnetApp\\MyFirstDotnetApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chine\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
