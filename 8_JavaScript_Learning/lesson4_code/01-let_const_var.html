@@ -23,7 +23,7 @@
     //会污染全局命名空间
 
     //4.局部作用域 （Local scope） {var only has Function scope}
-    function fn() {
+    function fn1() {
       var num1 = 20;
       console.log('num1', num1); // Uncaught ReferenceError: num1 is not defined
     }
@@ -36,7 +36,7 @@
     //6. 在没有块级作用域之前，内层变量可能会被外层覆盖
     // 因为var的hoisting, 里面的tmp会覆盖外面的tmp
     var tmp = new Date();
-    function fn() {
+    function fn2() {
       console.log('tmp', tmp);
       if (false) {
         var tmp = 'Hello World!';
@@ -44,11 +44,36 @@
     }
 
     // console.log("age", age); //Uncaught TypeError: Assignment to constant variable.
-    // 7.块级作用域 let const
+    // 7.块级作用域 Block (scripting)   let const
+    if (true) {
+      let x = 10;
+      const y = 20;
+      var z = 30;
+    }
+    // console.log('x', x);
+    // console.log('y:', y);
+    console.log('z:', z);
+
 
     //8. 暂时性死区 let const
+    // console.log('foo', foo);
+    // let foo = 'abc'; 
+    // // 01-let_const_var.html:59 Uncaught ReferenceError: Cannot access 'foo' before initialization
+
+
 
     //9.const定义的值不能改变
+
+    const age = 10;
+    // age = 20;  // 01-let_const_var.html:68 Uncaught TypeError: Assignment to constant variable. at 01-let_const_var.html:68:9
+
+    let foo = 'abc';
+    //let foo = "addd"; // Uncaught SyntaxError: Identifier 'foo' has already been declared (at 01-let_const_var.html:71:9)
+
+
+
+
+
   </script>
 </head>
 
