@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script>
-      //shallow copy:
-      //lodash _.clone方法
 
-      let arr = ["apple", "banana", "orange"];
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+    //shallow copy:
+    //lodash _.clone方法
 
-      //spread operator
-      let objOne = { name: "john", age: 30 };
+    let arr = ["apple", "banana", "orange"];
+    const arr1 = [...arr];
+    const arr2 = Array.from(arr);
+    const arr3 = arr.slice();
+    console.log(arr1, arr2, arr3);
 
-      //Object.assign()
-      let obj = {
-        id: 1,
-        name: "andy",
-        msg: {
-          age: 18,
-        },
-      };
-    </script>
-  </head>
-  <body></body>
+    //spread operator
+    let objOne = { name: "john", age: 30 };
+    let obj1 = { ...objOne };
+
+
+    //Object.assign()
+    let obj = {
+      id: 1,
+      name: "andy",
+      msg: {
+        age: 18,
+      },
+    };
+    let copiedObj = Object.assign({}, obj);
+    console.log('copiedObj: ', copiedObj)
+    obj.msg.age = 20
+    console.log('obj ', obj)
+    console.log('copiedObj: ', copiedObj)
+  </script>
+</head>
+
+<body></body>
+
 </html>

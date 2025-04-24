@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script>
-      // 遍历对象
-      var obj = {
-        name: "Ben",
-        age: 18,
-        sex: "male",
-        fn: function () {},
-      };
 
-      // for in 遍历我们的对象
-      // for (变量 in 对象) {
-      // }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+    // 遍历对象
+    var obj = {
+      name: "Ben",
+      age: 18,
+      sex: "male",
+      fn: function () { },
+    };
+    console.log(obj.name);
+    console.log(obj['age']);
 
-      // Object.keys
+    // for in 遍历我们的对象
+    // for (变量 in 对象) {
+    // }
+    for (let k in obj) {
+      console.log('key: ', k);
+      console.log('value: ', obj[k]);
+    }
+    // Object.keys
+    const keys = Object.keys(obj); //return an array of keys
+    console.log(keys); //(4) ['name', 'age', 'sex', 'fn']
 
-      // Object.entries() method returns an array of arrays, each containing a key-value pair of the object'
-    </script>
-  </head>
-  <body></body>
+    const nameValue = Object.keys(obj).includes('name') && obj.name;
+    console.log('nameValue: ', nameValue);
+
+    // Object.entries() method returns an array of arrays, each containing a key-value pair of the object'
+
+    Object.entries(obj).forEach(([key, value]) => { console.log(key, value) });
+  </script>
+</head>
+
+<body></body>
+
 </html>
