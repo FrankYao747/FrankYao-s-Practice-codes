@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let shoppingList = ["Milk", "Egg", "Bread"];
+        let item;
+        function capitalize(s) {
+            return String(s[0]).toUpperCase() + String(s).slice(1);
+        }
+
+        while (true) {
+            alert("The shoppingList has: " + shoppingList);
+            console.log("The shoppingList has: ");
+            for (let n in shoppingList) {
+                console.log((Number(n) + 1) + ". " + shoppingList[n]);
+            }
+
+            order = prompt('Add or Remove? ("q" for exit )').toLowerCase();
+            if (order == "q") {
+                break;
+            } else if (order == "add" || order == "a") {
+                if (shoppingList.length < 5) {
+                    alert("Adding!!!!");
+                    let item = capitalize(prompt("Please enter new item"))
+                    shoppingList.push(item);
+                    alert(item + " Added.");
+                    check_list(shoppingList);
+                } else check_list(shoppingList);
+
+            } else if (order == "remove" || order == "r") {
+                alert("Removing!!!!");
+                let s_p = shoppingList.pop();
+                alert(s_p + " Removed.");
+                console.log(s_p + " Removed.");
+
+
+            } else if (check_item(order) > 0) {
+                alert("The item is at: " + (Number(check_item(order)) + 1) + " of the Shopping List");
+                console.log("The item is at " + (Number(check_item(order)) + 1) + " of the Shopping List");
+            }
+            else alert("Wrong!!!!");
+
+        }
+        function check_list(shoppingList) {
+            if (shoppingList.length >= 5) {
+                console.log("Your cart is full!!!");
+                return alert("Your cart is full!!!");
+            }
+
+        }
+
+        function check_item(item) {
+            return shoppingList.indexOf(capitalize(item));
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
