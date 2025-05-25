@@ -1,0 +1,58 @@
+git clone xxx.git
+
+git config: config user
+
+git status: check files status
+
+git diff  
+
+git add ./myfile.txt
+
+git commit
+
+git commit -am "feat:my feature"
+
+git reset: remove commit history
+
+git stash: Cache the current work record
+
+git branch
+
+git switch
+
+git merge: Merge codes
+
+git rebase: Merge codes and change the base
+
+git pull
+
+git push
+
+
+
+
+branch:
+feature/xxx/add-page-title
+bugfix/xxx
+release/xxx
+hotfix/xxx
+main/xxx
+
+Git commit message:
+    feat: add page title
+    fix: fix bugs for button
+    docs: update readme file
+    chore: xxx
+    refactor: xxx
+    test:add unit test
+
+Git conventional Commits
+
+
+
+
+
+
+
+
+

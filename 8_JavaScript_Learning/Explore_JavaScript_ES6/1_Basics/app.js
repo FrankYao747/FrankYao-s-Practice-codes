@@ -90,7 +90,7 @@ const person = {
 const fruits = ['Apple', 'Pear', 'Banana']
 
 
-//////////////////////////////////////////////
+//////////////// Destructing ////////////////////////////
 
 
 console.log('person name ', person.name);
@@ -154,3 +154,95 @@ function combineWithSpread(arr1, arr2) {
 console.log('combineWithoutSpread', combineWithoutSpread([1, 2], [3, 4]));
 
 console.log('combineWithSpread', combineWithSpread([5, 6], [7, 8]));
+
+//////////// Assignment /////////////////
+const test_name = "Alice";
+if (true) {
+    const name = "Bob";
+    console.log(test_name); // 输出: Bob
+}
+console.log(test_name);     // 输出: Alice
+
+
+const add = (a, b) => a + b;
+
+/////////////////////////////
+
+const obj = {
+    value: 10,
+    regularFunc: function () {
+        console.log(this.value); // 输出 10（this 指向 obj）
+    },
+    arrowFunc: () => {
+        console.log(this.value); // undefined（this 不指向 obj）
+    }
+};
+
+obj.regularFunc(); // 输出：10
+obj.arrowFunc();   // 输出：undefined（因为箭头函数没有自己的 this）
+
+///////////////////////////////
+
+
+let greeting = "Hello, " + name + "! Welcome to the course.";
+
+let greeting_2 = `Hello, ${name}! Welcome to the course.`;
+
+////////////// Destructing ////////////////////
+
+const person_a = {
+    name_a: "Alice",
+    age_a: 25,
+    city_a: "Sydney"
+};
+
+// Wrong:
+// console.log(person_a.name);
+// console.log(person_a.age);
+
+
+const { name_a, age_a } = person_a;
+
+console.log(name_a);
+console.log(age_a);
+
+
+function Hello({ name_a, age_a }) {
+    console.log(`Hello! ${name_a}, you are ${age_a} old.`)
+}
+
+Hello(person_a);
+
+///////   Default Parameters/////
+
+
+function calculateArea(width, height = width) {
+    return width * height;
+}
+
+console.log(calculateArea(10));
+
+
+//// Rest/Spread/////////
+
+
+function sum(a, ...b) {
+    return a + b;
+}
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+
+// console.log(sum(arr1, arr2));
+
+
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0)
+}
+
+console.log(sum(1, 2));
+console.log(sum(1, 2, 3, 4));
+
+let res = [...arr1, ...arr2];
+console.log(res);
+
+
